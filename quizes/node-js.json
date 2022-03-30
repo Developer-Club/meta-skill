@@ -1,0 +1,882 @@
+{
+  "questions": [
+    {
+      "title": "Q1. When a javaScript function is invoked (called) in Node, where is a new frame placed?",
+      "codeBlock": [],
+      "options": [
+        "the call stack",
+        "the event loop",
+        "the poll phase",
+        "the events queue"
+      ],
+      "codeBlockOptions": {},
+      "explanation": "**Explanation:** From javascripttutorial: [reference](https://www.javascripttutorial.net/javascript-call-stack/#:~:text=If%20a%20function%20calls%20another,top%20of%20the%20call%20stack.)",
+      "correctAnswers": [0],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q2. Which of the following is a core module in Node?",
+      "codeBlock": [],
+      "options": ["webpack", "crypto", "request", "chalk"],
+      "codeBlockOptions": {},
+      "explanation": "**Explanation:** From flaviocopes docs: [reference](https://flaviocopes.com/node-core-modules/)",
+      "correctAnswers": [1],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q3. Which of the following Buffer class methods returns an uninitialized buffer?",
+      "codeBlock": [],
+      "options": ["allocUnsafe", "concat", "from", "alloc"],
+      "codeBlockOptions": {},
+      "explanation": "**Explanation:** From official docs: [reference](https://nodejs.org/dist/latest-v13.x/docs/api/buffer.html#buffer_class_method_buffer_allocunsafe_size)",
+      "correctAnswers": [0],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q4. Which of the following modules is NOT a built-in module in Node?",
+      "codeBlock": [],
+      "options": ["ftp", "events", "dgram", "http2"],
+      "codeBlockOptions": {},
+      "explanation": "**Explanation:** From flaviocopes docs: [reference](https://flaviocopes.com/node-core-modules/)",
+      "correctAnswers": [0],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q5. Which fs module method can be used to read the content of a file without buffering it in memory?",
+      "codeBlock": [],
+      "options": ["read", "readFile", "createReadStream", "readFileSync"],
+      "codeBlockOptions": {},
+      "explanation": "**Explanation:** _From official docs: [reference](https://nodejs.org/api/fs.html#fs_dir_read)",
+      "correctAnswers": [2],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q6. Which of the following DNS module methods uses the underlying OS facilities and does not necessarily perform any network communication?",
+      "codeBlock": [],
+      "options": ["lookup", "resolve", "resolve4", "reverse"],
+      "codeBlockOptions": {},
+      "explanation": "**Explanation:** From official docs: [reference](https://nodejs.org/api/dns.html#dns_dns_lookup_hostname_options_callback)",
+      "correctAnswers": [0],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q7. How do you check that a value is a date object in Node?",
+      "codeBlock": [],
+      "options": [
+        "util.types.isDate(value)",
+        "assert.isDate(value)",
+        "console.isDate(value)",
+        "util.date(value)"
+      ],
+      "codeBlockOptions": {},
+      "explanation": "**Explanation:** From official docs: [reference](https://nodejs.org/api/util.html#util_util_types_isdate_value)",
+      "correctAnswers": [0],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q8. Can you create an https web server with Node.js?",
+      "codeBlock": [],
+      "options": [
+        "no, there are no modules supporting it yet",
+        "yes, with the https or http2 modules",
+        "yes, through the path module",
+        "yes, with the http module"
+      ],
+      "codeBlockOptions": {},
+      "explanation": "**Explanation:** From official docs: [reference](https://nodejs.dev/learn/making-http-requests-with-nodejs)",
+      "correctAnswers": [1],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q9. What is the Api that is designed to insulate Addons from changes in the underlying JavaScript engine?",
+      "codeBlock": [],
+      "options": ["A-API", "Z-API", "N-API", "X-API"],
+      "codeBlockOptions": {},
+      "explanation": "**Explanation:** From official docs: [reference](https://nodejs.org/api/n-api.html#n_api_node_api)",
+      "correctAnswers": [2],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q10. Which CLI option can you use to debug a node script in Chrome DevTools?",
+      "codeBlock": [],
+      "options": ["--dev-tools", "--inspect", "--chrome", "--debug"],
+      "codeBlockOptions": {},
+      "explanation": "**Explanation:** From official docs: [reference](https://nodejs.org/en/docs/guides/debugging-getting-started/)",
+      "correctAnswers": [1],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q11. How can you count the number of logical CPUs on the machine that is running Node?",
+      "codeBlock": [],
+      "options": [
+        "node -p \"process.cpus\"",
+        "node -p \"util.cpus().size\"",
+        "node -p \"process.os.cpus\"",
+        "node -p \"os.cpus().length\""
+      ],
+      "codeBlockOptions": {},
+      "explanation": "**Explanation:** From coderrocketfuel docs: [reference](https://coderrocketfuel.com/article/get-the-number-of-system-cpu-cores-using-node-js)",
+      "correctAnswers": [3],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q12. Which of the following is a method on the console object?",
+      "codeBlock": [],
+      "options": ["exit", "test", "time", "print"],
+      "codeBlockOptions": {},
+      "explanation": "**Explanation:** From official docs: [reference](https://nodejs.org/api/console.html)",
+      "correctAnswers": [2],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q13. Which object is used to manage the cache of required modules?",
+      "codeBlock": [],
+      "options": [
+        "global.cache",
+        "module.cache",
+        "process.cache",
+        "require.cache"
+      ],
+      "codeBlockOptions": {},
+      "explanation": "**Explanation:** From official docs: [reference](https://nodejs.org/api/modules.html#modules_require_cache)",
+      "correctAnswers": [3],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q14. What is the command to silence all process warnings?",
+      "codeBlock": [],
+      "options": [
+        "node index.js --trace-warnings",
+        "node --no-warnings",
+        "node -trace-warnings",
+        "node index.js --no-warnings"
+      ],
+      "codeBlockOptions": {},
+      "explanation": "**Explanation:** From official docs: [reference](https://nodejs.org/api/cli.html#cli_no_warnings)",
+      "correctAnswers": [1],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q15. How can you use the promise API with a callback-based function such as child_process.exec?",
+      "codeBlock": [],
+      "options": [
+        "new Promise(child_process.exec())",
+        "util.promisify(child_process.exec())",
+        "util.promisify(child_process.exec)",
+        "new Promise(child_process.exec)"
+      ],
+      "codeBlockOptions": {},
+      "explanation": "**Explanation:** From official docs: [reference](https://nodejs.org/api/child_process.html)",
+      "correctAnswers": [2],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q16. Which of the following is NOT a Node repl command?",
+      "codeBlock": [],
+      "options": [".break", ".history", ".editor", ".save"],
+      "codeBlockOptions": {},
+      "explanation": "**Explanation:** From official docs: [reference](https://nodejs.org/api/repl.html#repl_commands_and_special_keys)",
+      "correctAnswers": [1],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q17. Which statement is true when you run the code shown below?",
+      "codeBlock": [],
+      "options": [
+        "The forked process shares the event loop with the parent process",
+        "A new VM instance is created and the two VM instances will be shared between the forked process and the parent process.",
+        "The forked process will have its own VM instance.",
+        "The forked process shares the same VM thread with the parent process."
+      ],
+      "codeBlockOptions": {},
+      "explanation": "**Explanation:** From official docs: [reference](https://nodejs.org/api/child_process.html#child_process_child_process_fork_modulepath_args_options)",
+      "correctAnswers": [2],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q18. If EventEmitter is in scope, which of the following lines of code will have an event emitter emitting a change event?",
+      "codeBlock": [],
+      "options": [
+        "EventEmitter.emit('change');",
+        "EventEmitter.new().emit('change');",
+        "(new EventEmitter()).emit('change');",
+        "new EventEmitter('change');"
+      ],
+      "codeBlockOptions": {},
+      "explanation": "**Explanation:** _Because the EventEmitter is already in scope. No need to create new one._",
+      "correctAnswers": [0],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q19. Which of the following objects is a stream",
+      "codeBlock": [],
+      "options": ["process.uptime", "process.stdout", "process", "Buffer"],
+      "codeBlockOptions": {},
+      "explanation": "**Explanation:** _process.stdout is Buffer type._",
+      "correctAnswers": [1],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q20. Which module variable holds the resolved absolute path of the current module file?",
+      "codeBlock": [],
+      "options": ["`__pathname`", "`__location`", "`__flder`", "`__filename`"],
+      "codeBlockOptions": {},
+      "explanation": "",
+      "correctAnswers": [3],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "21. If the child_process module methods are in scope, what is a current way to execute the command ps -ef using a child process?",
+      "codeBlock": [],
+      "options": [
+        "spawn(\"ps -ef\")",
+        "exec(\"ps -ef\")",
+        "exec(\"ps\", \"-ef\")",
+        "fork(\"ps -ef\")"
+      ],
+      "codeBlockOptions": {},
+      "explanation": "",
+      "correctAnswers": [1],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q22.Which console method can be used to print the stack trace to the point of its execution?",
+      "codeBlock": [],
+      "options": ["stack", "trace", "debug", "print"],
+      "codeBlockOptions": {},
+      "explanation": "",
+      "correctAnswers": [1],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q23.When you run JavaScript in a Node.js application, which of the following elements in a Node.js stack actually executes that JavaScript?",
+      "codeBlock": [],
+      "options": [
+        "the libuv library",
+        "the c-ares library",
+        "the VM (like VS or Chakra)",
+        "the repl module"
+      ],
+      "codeBlockOptions": {},
+      "explanation": "",
+      "correctAnswers": [2],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q24. Looking at the code below, what does the console show?",
+      "codeBlock": [
+        "```\nconst http = require('http');\n const hostname = '127.0.0.1'; const port = 3000;\n const server = http.createServer((req, res) => {\n  res.statusCode = 200;  res.setHeader(\"Content-Type\", \"text/plain\");  res.end(\"Hello World\\n\");\n});\nserver.listen(port, hostname, () => { console.log(`server running at http://${hostname}:${port}/`); });\n```"
+      ],
+      "options": [
+        "server running at http://localhost:3000/",
+        "server running at port 3000",
+        "server running at http://localhost:4000/",
+        "server running at http://127.0.0.1:3000/"
+      ],
+      "codeBlockOptions": {},
+      "explanation": "",
+      "correctAnswers": [3],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q25.What is the purpose of the path module?",
+      "codeBlock": [],
+      "options": [
+        "to provide utilities to play with file and directory paths",
+        "to provide utilities to add and remove files",
+        "It is a retiring module.",
+        "to provide utilities to test files"
+      ],
+      "codeBlockOptions": {},
+      "explanation": "",
+      "correctAnswers": [0],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q26.How do you make an HTTP server object active and listen to requests on certain ports?",
+      "codeBlock": [],
+      "options": [
+        "server. start",
+        "server.activate",
+        "server.listen",
+        "server. run"
+      ],
+      "codeBlockOptions": {},
+      "explanation": "",
+      "correctAnswers": [2],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q27.What does the code shown below do?",
+      "codeBlock": [
+        "```\nconst fs = require('fs'); const os = require('os');\nconst system = os.platform(); const user = os.userInfo().username;\nfs.appendFile('hello.txt', `Hello ${user} on ${system}`, (err) => { if (err) throw err; console.log('The data was appended to file!');}\n);\n```"
+      ],
+      "options": [
+        "creates a text file hello.txt and appends customized text",
+        "creates an image file",
+        "console logs system information",
+        "creates a file named data and append numbers"
+      ],
+      "codeBlockOptions": {},
+      "explanation": "",
+      "correctAnswers": [0],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q28.How do you start a Node application, if the entry file is indexjs?",
+      "codeBlock": [],
+      "options": [
+        "nodemon start",
+        "start index.js",
+        "node index.js",
+        "node start"
+      ],
+      "codeBlockOptions": {},
+      "explanation": "",
+      "correctAnswers": [2],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q29.What is the purpose of the file system (fs) module?",
+      "codeBlock": [],
+      "options": [
+        "to provide methods to work with requests and responses",
+        "to provide methods to work with files",
+        "to provide methods to work with databases",
+        "to find new file systems"
+      ],
+      "codeBlockOptions": {},
+      "explanation": "",
+      "correctAnswers": [1],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q30.What is the Node LTS version?",
+      "codeBlock": [],
+      "options": [
+        "It is the current unstable version and is to be avoided.",
+        "It is the version that will be retired soon.",
+        "It is the version with the latest features.",
+        "It is the safest version for long-term support."
+      ],
+      "codeBlockOptions": {},
+      "explanation": "",
+      "correctAnswers": [3],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q31. Which of the following is NOT a valid stream in Node?",
+      "codeBlock": [],
+      "options": [
+        "process. stdinfo",
+        "process. stdin",
+        "process. stdout",
+        "process. stderr"
+      ],
+      "codeBlockOptions": {},
+      "explanation": "",
+      "correctAnswers": [0],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q32. You have a script.js file with the single line of code shown here. What will be the output of executing script.js with the node command?",
+      "codeBlock": [],
+      "options": [
+        "ReferenceError: arguments is not defined",
+        "an empty string",
+        "undefined",
+        "an object representing an array that has five elements"
+      ],
+      "codeBlockOptions": {},
+      "explanation": "",
+      "correctAnswers": [3],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q33. Which choice is not a valid method on event emitters?",
+      "codeBlock": [],
+      "options": ["start", "on", "once", "off"],
+      "codeBlockOptions": {},
+      "explanation": "",
+      "correctAnswers": [0],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q34. Which special object is an instance of EventEmitter?Which special object is an instance of null?",
+      "codeBlock": [],
+      "options": ["process", "Buffer", "root", "require"],
+      "codeBlockOptions": {},
+      "explanation": "",
+      "correctAnswers": [3],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q35. What is the command to get a list of available commands for Node.js?What is the command to get a list of available commands for Node.js?",
+      "codeBlock": [],
+      "options": ["node index.js -x", "node -v", "node -h", "node index.js -h"],
+      "codeBlockOptions": {},
+      "explanation": "",
+      "correctAnswers": [2],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q36. When a request event is received in the HTTP module, what is the type of the first argument passed to that event, usually named req?",
+      "codeBlock": [],
+      "options": [
+        "http.IncomingMessage",
+        "http.ServerRequest",
+        "http.ClientRequest",
+        "http.ServerResponse"
+      ],
+      "codeBlockOptions": {},
+      "explanation": "",
+      "correctAnswers": [0],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q37. What are the arguments passed to the module wrapper function?",
+      "codeBlock": [],
+      "options": [
+        "`exports, __filename, __dirname`",
+        "`exports, process, require, module, __filename, __dirname`",
+        "`exports, module, __filename, __dirname`",
+        "`exports, require, module, __filename, __dirname`"
+      ],
+      "codeBlockOptions": {},
+      "explanation": "",
+      "correctAnswers": [3],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q38. Which library provides Node.js with the event loop?",
+      "codeBlock": [],
+      "options": ["V8", "c-ares", "libuv", "events"],
+      "codeBlockOptions": {},
+      "explanation": "",
+      "correctAnswers": [2],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q39. What does the .node file extension represent?",
+      "codeBlock": [],
+      "options": [
+        "a C++ file that can have a .node extension and that Node will be able to execute directly.",
+        "a C++ Addon file that is built with node-gyp",
+        "a JSON file that can have a .node extension as well as the .json extension",
+        "a JavaScript file that can have a .node extension as well as the .js extension"
+      ],
+      "codeBlockOptions": {},
+      "explanation": "",
+      "correctAnswers": [1],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q40. What can you export with module.exports?",
+      "codeBlock": [],
+      "options": [
+        "only objects.",
+        "only functions",
+        "only variables and arrays",
+        "functions, objects, arrays, or anything you assign to the module"
+      ],
+      "codeBlockOptions": {},
+      "explanation": "",
+      "correctAnswers": [3],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q41. Which core module in Node can you use to take advantage of multicore systems?",
+      "codeBlock": [],
+      "options": ["os", "util", "cluster", "net"],
+      "codeBlockOptions": {},
+      "explanation": "",
+      "correctAnswers": [2],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q42. Which core Node module has wrappers for OpenSSL methods?",
+      "codeBlock": [],
+      "options": ["SSL", "hash", "crypto", "TLS"],
+      "codeBlockOptions": {},
+      "explanation": "",
+      "correctAnswers": [2],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q43. Which line imports a promise-based version of the readFile method?",
+      "codeBlock": [],
+      "options": [
+        "const { readFile } = require(fs).promises",
+        "const { readFile } = require(fs)",
+        "const { readFilePromises: readFile } = require(fs)",
+        "const { readFile } = require(promises)"
+      ],
+      "codeBlockOptions": {},
+      "explanation": "",
+      "correctAnswers": [0],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q44. According to the rules of semantic versioning, what does a release incrementing the third number in an npm version string communicate to users about the release changes?",
+      "codeBlock": [],
+      "options": [
+        "Changes are not backwards compatible.",
+        "Changes might not be backward compatible and might break existing code.",
+        "Changes are just bug fixes and no new features were added.",
+        "Changes will add new functionality but will not break any existing code."
+      ],
+      "codeBlockOptions": {},
+      "explanation": "",
+      "correctAnswers": [2],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q45. What does REPL stand for?",
+      "codeBlock": [],
+      "options": [
+        "run, examine, put, loop",
+        "read, eval, print, loop",
+        "run, edit, print, loop",
+        "read, extend, print, loop"
+      ],
+      "codeBlockOptions": {},
+      "explanation": "",
+      "correctAnswers": [1],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q46. Which file does node-gyp use to read the build configuration of a module?",
+      "codeBlock": [],
+      "options": [".gyprc", "binding.gyp", "gyp.json", "package.gyp"],
+      "codeBlockOptions": {},
+      "explanation": "",
+      "correctAnswers": [1],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q47. Which core module in Node can you use for testing?",
+      "codeBlock": [],
+      "options": ["chai", "jest", "assert", "mocha"],
+      "codeBlockOptions": {},
+      "explanation": "",
+      "correctAnswers": [2],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q48. Which core module in Node provides an API to register callbacks to track asynchronous resources created inside a Node.js application?",
+      "codeBlock": [],
+      "options": ["cluster", "async_hooks", "dgram", "inspector"],
+      "codeBlockOptions": {},
+      "explanation": "",
+      "correctAnswers": [1],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q49. Which Node.js module should you use when you need to decode raw data into strings?",
+      "codeBlock": [],
+      "options": ["buffer", "util", "string_decoder", "string_buffer"],
+      "codeBlockOptions": {},
+      "explanation": "",
+      "correctAnswers": [2],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q50. Which global object acts like a bridge between a Node script and the host operating system?",
+      "codeBlock": [],
+      "options": ["v8", "env", "process", "child_process"],
+      "codeBlockOptions": {},
+      "explanation": "**Explanation:** _process is an global object and act like a bridge, the others aren't (please see https://nodejs.org/api/globals.html or https://nodejs.org/api/process.html#process_process)._",
+      "correctAnswers": [2],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q51. Which statement is true about Node.js and threads?",
+      "codeBlock": [],
+      "options": [
+        "Every Node process runs in a single thread, and all the I/O work is run in that same thread.",
+        "Every Node process gets four threads that it can share between its JavaScript VM and the event loop.",
+        "The event loop is single-threaded, but a JavaScript VM can use multiple threads.",
+        "JavaScript execution in Node.js is single-threaded, but I/O operations are executed using multiple threads."
+      ],
+      "codeBlockOptions": {},
+      "explanation": "**Explanation:** _https://www.geeksforgeeks.org/why-node-js-is-a-single-threaded-language/_",
+      "correctAnswers": [2],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q52. Which statement about event emitters is false?",
+      "codeBlock": [],
+      "options": [
+        "Event names must be camelCase strings.",
+        "The emit method allows a arbitrary set of arguments to be passed to the listener functions.",
+        "Any values returned by the listeners for an emitted events are ignored.",
+        "When an event emitter objeect emits an event, all of the functions attached to that specific event are called synchronously."
+      ],
+      "codeBlockOptions": {},
+      "explanation": "",
+      "correctAnswers": [0],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q53. Which core module in Node can you use to compile and run JavaScript code in a sandbox environment?",
+      "codeBlock": [],
+      "options": ["sandbox", "buffer", "vm", "v8"],
+      "codeBlockOptions": {},
+      "explanation": "",
+      "correctAnswers": [2],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q54. How would you determine the number of cluster instances to start when using the cluster module?",
+      "codeBlock": [],
+      "options": [
+        "const numInstances = cluster.instances().length;",
+        "const numInstances = cluster.instances();",
+        "const numInstances = require('os').cpus().length;",
+        "const numInstances = process.cpus().length;"
+      ],
+      "codeBlockOptions": {},
+      "explanation": "**Explanation:** _From official docs: [https://nodejs.org/api/cluster.html#cluster_cluster](https://nodejs.org/api/cluster.html#cluster_cluster)_",
+      "correctAnswers": [2],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q55. You have to read a large text file, replace some words in it, and write it back to a new file. You know that the memory on your target system is limited. What should you do?",
+      "codeBlock": [],
+      "options": [
+        "Use regular expressions directly on the file.",
+        "Use Promises and async/await to offload the task to libuv.",
+        "Copy the file into a database and perform the operations there.",
+        "Use readline together with streams to read and transform and write the file contents line by line."
+      ],
+      "codeBlockOptions": {},
+      "explanation": "**Explanation:** _From official docs: [https://nodejs.org/api/readline.html#readline_example_read_file_stream_line_by_line](https://nodejs.org/api/readline.html#readline_example_read_file_stream_line_by_line)_",
+      "correctAnswers": [3],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q56. Which choice is `not` a Node global object?",
+      "codeBlock": [],
+      "options": ["process", "exports", "setTimeout", "Buffer"],
+      "codeBlockOptions": {},
+      "explanation": "**Explanation:** _process, exports and setTimeout are global objects, Buffer isn't (please see https://nodejs.org/api/globals.html)_",
+      "correctAnswers": [3],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q57. What is the correct way to pipe a readable stream and a writable stream?",
+      "codeBlock": [],
+      "options": [
+        "readableStream.pipe(writableStream)",
+        "readableStream.on(pipe, writableStream)",
+        "writableStream.pipe(readableStream)",
+        "writableStream.on(pipe, readableStream)"
+      ],
+      "codeBlockOptions": {},
+      "explanation": "",
+      "correctAnswers": [0],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q58. How can you convert path segments into a string using the platform-specific separator as a delimiter?",
+      "codeBlock": [],
+      "options": ["path.concat", "path.join", "path.format", "path.parse"],
+      "codeBlockOptions": {},
+      "explanation": "",
+      "correctAnswers": [1],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q59. What is the purpose of N-API?",
+      "codeBlock": [],
+      "options": [
+        "to allow users to make requests to the server",
+        "to insulate Addons from changes in the underlying JavaScript engine",
+        "to execute multi-threaded code in the Node environment",
+        "to provide a quick way for users to create REST APIs"
+      ],
+      "codeBlockOptions": {},
+      "explanation": "",
+      "correctAnswers": [1],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q60. What is a process object and its role?",
+      "codeBlock": [],
+      "options": [
+        "a locally scoped object that provides information about the current node process",
+        "a global object that provides information about files",
+        "a global object that provides information about the database",
+        "a global object that provides information about the current node process"
+      ],
+      "codeBlockOptions": {},
+      "explanation": "",
+      "correctAnswers": [3],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q61. What will this code log to the console?",
+      "codeBlock": [
+        "```\n// File: person.js\nexports.name = \"Jane\";\n// File: index.js\nconst person = require('./person.js');\nconsole.log(person);\n```"
+      ],
+      "options": ["`{'Jane'}`", "`{ name: 'Jane' }`", "`{}`", "`Jane`"],
+      "codeBlockOptions": {},
+      "explanation": "",
+      "correctAnswers": [1],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q62. What will this code log to the console?",
+      "codeBlock": [
+        "```\n// File: person.js\nexports = \"John\";\n// File: index.js\nconst person = require('./person.js');\nconsole.log(person);\n```"
+      ],
+      "options": ["`John`", "`Undefined`", "`{'John'}`", "`{}`"],
+      "codeBlockOptions": {},
+      "explanation": "",
+      "correctAnswers": [3],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q63. Is it possible to write tests in Node.js without an external library?",
+      "codeBlock": [],
+      "options": [
+        "yes, through the assert module",
+        "yes, through the debugger module",
+        "yes, through the console module",
+        "no"
+      ],
+      "codeBlockOptions": {},
+      "explanation": "**From the article:** [Making a Testing Framework in Node.js (Without any External Libraries)](https://www.sohamkamani.com/blog/javascript/making-a-node-js-test-runner/)",
+      "correctAnswers": [0],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q64. Which assert module method is usually used to test the error-first argument in callbacks?",
+      "codeBlock": [],
+      "options": ["fail", "doesNotThrow", "deepStrictEqual", "ifError"],
+      "codeBlockOptions": {},
+      "explanation": "",
+      "correctAnswers": [3],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q65. Which choice is not a method on the util module?",
+      "codeBlock": [],
+      "options": ["promisify", "asyncify", "types", "callbackify"],
+      "codeBlockOptions": {},
+      "explanation": "",
+      "correctAnswers": [1],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q66. Which choice is not a subclass of the Error class?",
+      "codeBlock": [],
+      "options": ["GlobalError", "TypeError", "RangeError", "AssertionError"],
+      "codeBlockOptions": {},
+      "explanation": "",
+      "correctAnswers": [0],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q67. What is Node built on?",
+      "codeBlock": [],
+      "options": ["Python", "V8 JavaScript engine", "PHP", "c"],
+      "codeBlockOptions": {},
+      "explanation": "",
+      "correctAnswers": [1],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q68. How does it affect the performance of a web application when an execution path contains a CPU-heavy operation, such as calculating a long Fibonacci sequence?",
+      "codeBlock": [],
+      "options": [
+        "As Node.js is asynchronous, this is handled by a libuv and a threadpool. The performance will not notably degrade.",
+        "As the application code runs asynchronously within a single thread, the execution will block, accepting no more requests until the operation is completed.",
+        "As Node.js is asynchronous, this is handled by a threadpool and the performance will not notably degrade.",
+        "The current thread will block until the executon is completed and the operating system will spawn new threads to handle incoming requests. This can exhaust the number of allowed threads (255) and degrade performance over time."
+      ],
+      "codeBlockOptions": {},
+      "explanation": "",
+      "correctAnswers": [],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q69. What is used for parsing and running Javascript in Node.js?",
+      "codeBlock": [],
+      "options": ["EventLoop", "Libuv", "Google V8", "Express.js"],
+      "codeBlockOptions": {},
+      "explanation": "",
+      "correctAnswers": [2],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    }
+  ]
+}

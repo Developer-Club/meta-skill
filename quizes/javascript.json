@@ -1,0 +1,1659 @@
+{
+  "questions": [
+    {
+      "title": "Q1. Which operator returns true if the two compared values are not equal?",
+      "codeBlock": [],
+      "options": ["`<>`", "`~`", "`==!`", "`!==`"],
+      "codeBlockOptions": {},
+      "explanation": "[Reference Javascript Comparison Operators](https://www.w3schools.com/js/js_operators.asp)",
+      "correctAnswers": [3],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q2. How is a forEach statement different from a for statement?",
+      "codeBlock": [],
+      "options": [
+        "Only a for statement uses a callback function.",
+        "A for statement is generic, but a forEach statement can be used only with an array.",
+        "Only a forEach statement lets you specify your own iterator.",
+        "A forEach statement is generic, but a for statement can be used only with an array."
+      ],
+      "codeBlockOptions": {},
+      "explanation": "[Reference Differences between forEach and for loop](https://www.geeksforgeeks.org/difference-between-foreach-and-for-loop-in-javascript/)",
+      "correctAnswers": [1],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q3. Review the code below. Which statement calls the addTax function and passes 50 as an argument? How would you use this function to find out how much tax should be paid on \\$50?",
+      "codeBlock": [
+        "```js\nfunction addTax(total) {\n  return total * 1.05;\n}\n```"
+      ],
+      "options": [
+        "`addTax = 50;`",
+        "`return addTax 50;`",
+        "`addTax(50);`",
+        "`addTax 50;`"
+      ],
+      "codeBlockOptions": {},
+      "explanation": "[Reference functions in javascript](https://www.w3schools.com/js/js_functions.asp)",
+      "correctAnswers": [2],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q4. Which statement is the correct way to create a variable called rate and assign it the value 100?",
+      "codeBlock": [],
+      "options": [
+        "`let rate = 100;`",
+        "`let 100 = rate;`",
+        "`100 = let rate;`",
+        "`rate = 100;`"
+      ],
+      "codeBlockOptions": {},
+      "explanation": "[Reference Javascript Assignment operators](https://www.w3schools.com/js/js_operators.asp)",
+      "correctAnswers": [0],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q5. Which statement creates a new object using the Person constructor? Which statement creates a new Person object called \"student\"?",
+      "codeBlock": [],
+      "options": [
+        "`var student = new Person();`",
+        "`var student = construct Person;`",
+        "`var student = Person();`",
+        "`var student = construct Person();`"
+      ],
+      "codeBlockOptions": {},
+      "explanation": "[Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes)",
+      "correctAnswers": [0],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q6. When would the final statement in the code shown be logged to the console? When would 'results shown' be logged to the console?",
+      "codeBlock": [
+        "```js\nlet modal = document.querySelector('#result');\nsetTimeout(function(){\n    modal.classList.remove('hidden);\n}, 10000);\nconsole.log('Results shown');\n```"
+      ],
+      "options": [
+        "after 10 second",
+        "after results are received from the HTTP request",
+        "after 10000 seconds",
+        "immediately"
+      ],
+      "codeBlockOptions": {},
+      "explanation": "[Reference Javascript is synchronous and single threaded](https://stackoverflow.com/a/2035662/15067394)",
+      "correctAnswers": [3],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "### Q7. Which snippet could you add to this code to print \"food\" to the console?",
+      "codeBlock": [
+        "```javascript\nclass Animal {\n  static belly = [];\n  eat() {\n    Animal.belly.push('food');\n  }\n}\nlet a = new Animal();\na.eat();\nconsole.log(/* Snippet Here */); //Prints food\n```"
+      ],
+      "options": [
+        "`a.prototype.belly[0]`",
+        "`Object.getPrototype0f (a).belly[0]`",
+        "`Animal.belly[0]`",
+        "`a.belly[0]`"
+      ],
+      "codeBlockOptions": {},
+      "explanation": "[Reference Javascript Class static Keyword](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/static)",
+      "correctAnswers": [2],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q8. You've written the code shown to log a set of consecutive values, but it instead results in the value 5, 5, 5, and 5 being logged to the console. Which revised version of the code would result in the value 1, 2, 3 and 4 being logged?",
+      "codeBlock": [
+        "```javascript\nfor (var i = 1; i <= 4; i++) {\n  setTimeout(function () {\n    console.log(i);\n  }, i * 10000);\n}\n```"
+      ],
+      "options": ["", "", "", ""],
+      "codeBlockOptions": {
+        "0": "```javascript\nfor (var i = 1; i <= 4; i++) {\n  (function (i) {\n    setTimeout(function () {\n      console.log(j);\n    }, j * 1000);\n  })(j);\n}\n```",
+        "1": "```javascript\nwhile (var i=1; i<=4; i++) {\n  setTimeout(function() {\n    console.log(i);\n    }, i*1000);\n}\n```",
+        "2": "```javascript\nfor (var i = 1; i <= 4; i++) {\n  (function (j) {\n    setTimeout(function () {\n      console.log(j);\n    }, j * 1000);\n  })(i);\n}\n```",
+        "3": "```javascript\nfor (var j = 1; j <= 4; j++) {\n  setTimeout(function () {\n    console.log(j);\n  }, j * 1000);\n}\n```"
+      },
+      "explanation": "[Reference immediately invoked anonymous functions](https://www.javascripttutorial.net/javascript-anonymous-functions/)",
+      "correctAnswers": [2],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": true
+    },
+    {
+      "title": "Q9. How does a function create a closure?",
+      "codeBlock": [],
+      "options": [
+        "It reloads the document whenever the value changes.",
+        "It returns a reference to a variable in its parent scope.",
+        "It completes execution without returning.",
+        "It copies a local variable to the global scope."
+      ],
+      "codeBlockOptions": {},
+      "explanation": "[Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures)",
+      "correctAnswers": [1],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q10. Which statement creates a new function called discountPrice?",
+      "codeBlock": [],
+      "options": ["", "", "", ""],
+      "codeBlockOptions": {
+        "0": "```js\nlet discountPrice = function (price) {\n  return price * 0.85;\n};\n```",
+        "1": "```js\nlet discountPrice(price) {\n  return price * 0.85;\n};\n```",
+        "2": "```js\nlet function = discountPrice(price) {\n  return price * 0.85;\n};\n```",
+        "3": "```js\ndiscountPrice = function (price) {\n  return price * 0.85;\n};\n```"
+      },
+      "explanation": "[Reference defining javascript functions](https://www.w3schools.com/js/js_functions.asp)",
+      "correctAnswers": [0],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": true
+    },
+    {
+      "title": "Q11. What is the result in the console of running the code shown?",
+      "codeBlock": [
+        "```js\nvar Storm = function () {};\nStorm.prototype.precip = 'rain';\nvar WinterStorm = function () {};\nWinterStorm.prototype = new Storm();\nWinterStorm.prototype.precip = 'snow';\nvar bob = new WinterStorm();\nconsole.log(bob.precip);\n```"
+      ],
+      "options": ["Storm()", "undefined", "'rain'", "'snow'"],
+      "codeBlockOptions": {},
+      "explanation": "[Reference prototype chain](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain)",
+      "correctAnswers": [3],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q12. You need to match a time value such as 12:00:32. Which of the following regular expressions would work for your code?",
+      "codeBlock": [],
+      "options": [
+        "`/[0-9]{2,}:[0-9]{2,}:[0-9]{2,}/`",
+        "`/\\d\\d:\\d\\d:\\d\\d/`",
+        "`/[0-9]+:[0-9]+:[0-9]+/`",
+        "`/ : : /`",
+        "[Repeating characters](https://regexone.com/lesson/repeating_characters)",
+        "[Kleene operators](https://regexone.com/lesson/kleene_operators)"
+      ],
+      "codeBlockOptions": {},
+      "explanation": "**More resources:**",
+      "correctAnswers": [1],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q13. What is the result in the console of running this code?",
+      "codeBlock": [
+        "```js\n'use strict';\nfunction logThis() {\n  this.desc = 'logger';\n  console.log(this);\n}\nnew logThis();\n```"
+      ],
+      "options": [
+        "`undefined`",
+        "`window`",
+        "`{desc: \"logger\"}`",
+        "`function`"
+      ],
+      "codeBlockOptions": {},
+      "explanation": "[Reference javascript classes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes)",
+      "correctAnswers": [2],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q14. How would you reference the text 'avenue' in the code shown?",
+      "codeBlock": [
+        "```js\nlet roadTypes = ['street', 'road', 'avenue', 'circle'];\n```"
+      ],
+      "options": [
+        "roadTypes.2",
+        "roadTypes\\[3\\]",
+        "roadTypes.3",
+        "roadTypes\\[2\\]"
+      ],
+      "codeBlockOptions": {},
+      "explanation": "[Reference accessing javascript arrays](https://www.w3schools.com/js/js_arrays.asp)",
+      "correctAnswers": [3],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q15. What is the result of running this statement?",
+      "codeBlock": ["```javascript\nconsole.log(typeof 42);\n```"],
+      "options": ["`'float'`", "`'value'`", "`'number'`", "`'integer'`"],
+      "codeBlockOptions": {},
+      "explanation": "[Reference javascript data types](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures)",
+      "correctAnswers": [2],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q16. Which property references the DOM object that dispatched an event?",
+      "codeBlock": [],
+      "options": ["`self`", "`object`", "`target`", "`source`"],
+      "codeBlockOptions": {},
+      "explanation": "[Reference DOM events](https://www.w3schools.com/jsref/dom_obj_event.asp)",
+      "correctAnswers": [2],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q17. You're adding error handling to the code shown. Which code would you include within the if statement to specify an error message?",
+      "codeBlock": [
+        "```js\nfunction addNumbers(x, y) {\n  if (isNaN(x) || isNaN(y)) {\n  }\n}\n```"
+      ],
+      "options": [
+        "`exception('One or both parameters are not numbers')`",
+        "`catch('One or both parameters are not numbers')`",
+        "`error('One or both parameters are not numbers')`",
+        "`throw('One or both parameters are not numbers')`"
+      ],
+      "codeBlockOptions": {},
+      "explanation": "[Reference javascript throw](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/throw)",
+      "correctAnswers": [3],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q18. Which method converts JSON data to a JavaScript object?",
+      "codeBlock": [],
+      "options": [
+        "`JSON.fromString();`",
+        "`JSON.parse()`",
+        "`JSON.toObject()`",
+        "`JSON.stringify()`"
+      ],
+      "codeBlockOptions": {},
+      "explanation": "[Reference convert json to javascript object](https://www.w3schools.com/js/js_json_parse.asp)",
+      "correctAnswers": [1],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q19. When would you use a conditional statement?",
+      "codeBlock": [],
+      "options": [
+        "When you want to reuse a set of statements multiple times.",
+        "When you want your code to choose between multiple options.",
+        "When you want to group data together.",
+        "When you want to loop through a group of statement."
+      ],
+      "codeBlockOptions": {},
+      "explanation": "[Reference javascript conditionals](https://www.javascript.com/learn/conditionals)",
+      "correctAnswers": [1],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q20. What would be the result in the console of running this code?",
+      "codeBlock": [
+        "```js\nfor (var i = 0; i < 5; i++) {\n  console.log(i);\n}\n```"
+      ],
+      "options": ["12345", "1234", "01234", "012345"],
+      "codeBlockOptions": {},
+      "explanation": "[Reference javascript for loops](https://www.w3schools.com/js/js_loop_for.asp)",
+      "correctAnswers": [2],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q21. Which Object method returns an iterable that can be used to iterate over the properties of an object?",
+      "codeBlock": [],
+      "options": [
+        "`Object.get()`",
+        "`Object.loop()`",
+        "`Object.each()`",
+        "`Object.keys()`"
+      ],
+      "codeBlockOptions": {},
+      "explanation": "[Reference javascript object static methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object#static_methods)",
+      "correctAnswers": [3],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q22. What will be logged to the console?",
+      "codeBlock": [
+        "```js\nvar a = ['dog', 'cat', 'hen'];\na[100] = 'fox';\nconsole.log(a.length);\n```"
+      ],
+      "options": ["101", "3", "4", "100"],
+      "codeBlockOptions": {},
+      "explanation": "",
+      "correctAnswers": [0],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q23. What is one difference between collections created with Map and collections created with Object?",
+      "codeBlock": [],
+      "options": [
+        "You can iterate over values in a Map in their insertion order.",
+        "You can count the records in a Map with a single method call.",
+        "Keys in Maps can be strings.",
+        "You can access values in a Map without iterating over the whole collection."
+      ],
+      "codeBlockOptions": {},
+      "explanation": "[Reference map methods javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)",
+      "correctAnswers": [1],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q24. What is the value of dessert.type after executing this code?",
+      "codeBlock": [
+        "```js\nconst dessert = { type: 'pie' };\ndessert.type = 'pudding';\n```"
+      ],
+      "options": [
+        "pie",
+        "The code will throw an error.",
+        "pudding",
+        "undefined"
+      ],
+      "codeBlockOptions": {},
+      "explanation": "[Reference working with js objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects)",
+      "correctAnswers": [2],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q25. 0 && hi",
+      "codeBlock": [],
+      "options": ["ReferenceError", "True", "0", "false"],
+      "codeBlockOptions": {},
+      "explanation": "[Reference boolean logic](https://ntgard.medium.com/https-medium-com-ntgard-boolean-logic-in-javascript-part-1-3371af974f19)",
+      "correctAnswers": [2],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q26. Which of the following operators can be used to do a short-circuit evaluation?",
+      "codeBlock": [],
+      "options": ["`\\++`", "`\\--`", "`\\==`", "`\\|\\|`"],
+      "codeBlockOptions": {},
+      "explanation": "[Reference short circuit javascript](https://codeburst.io/javascript-what-is-short-circuit-evaluation-ff22b2f5608c)",
+      "correctAnswers": [3],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q27. Which statement sets the Person constructor as the parent of the Student constructor in the prototype chain?",
+      "codeBlock": [],
+      "options": [
+        "`Student.parent = Person;`",
+        "`Student.prototype = new Person();`",
+        "`Student.prototype = Person;`",
+        "`Student.prototype = Person();`"
+      ],
+      "codeBlockOptions": {},
+      "explanation": "[Reference protoype object js](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain)",
+      "correctAnswers": [1],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q28. Why would you include a \"use strict\" statement in a JavaScript file?",
+      "codeBlock": [],
+      "options": [
+        "to tell parsers to interpret your JavaScript syntax loosely",
+        "to tell parsers to enforce all JavaScript syntax rules when processing your code",
+        "to instruct the browser to automatically fix any errors it finds in the code",
+        "to enable ES6 features in your code"
+      ],
+      "codeBlockOptions": {},
+      "explanation": "[Reference what is use strict in js](https://www.w3schools.com/js/js_strict.asp)",
+      "correctAnswers": [1],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q29. Which Variable-defining keyword allows its variable to be accessed (as undefined) before the line that defines it?",
+      "codeBlock": [],
+      "options": ["all of them", "`const`", "`var`", "`let`"],
+      "codeBlockOptions": {},
+      "explanation": "[Reference var vs let vs const in js](https://www.freecodecamp.org/news/var-let-and-const-whats-the-difference/)",
+      "correctAnswers": [2],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q30. Which of the following values is not a Boolean false?",
+      "codeBlock": [],
+      "options": [
+        "`Boolean(0)`",
+        "`Boolean(\"\")`",
+        "`Boolean(NaN)`",
+        "`Boolean(\"false\")`"
+      ],
+      "codeBlockOptions": {},
+      "explanation": "[Reference boolean of a string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)",
+      "correctAnswers": [3],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q31. Which of the following is not a keyword in JavaScript?",
+      "codeBlock": [],
+      "options": ["`this`", "`catch`", "`function`", "`array`"],
+      "codeBlockOptions": {},
+      "explanation": "[Reference js reserved words](https://www.w3schools.com/js/js_reserved.asp)",
+      "correctAnswers": [3],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q32. Which variable is an implicit parameter for every function in JavaScript?",
+      "codeBlock": [],
+      "options": ["Arguments", "args", "argsArray", "argumentsList"],
+      "codeBlockOptions": {},
+      "explanation": "[Reference implicit js parameters for functions](https://www.codeproject.com/Tips/1221966/JavaScript-Functions-Implicit-Parameters)",
+      "correctAnswers": [0],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q33. For the following class, how do you get the value of 42 from an instance of X?",
+      "codeBlock": [
+        "```js\nclass X {\n  get Y() {\n    return 42;\n  }\n}\nvar x = new X();\n```"
+      ],
+      "options": ["`x.get('Y')`", "`x.Y`", "`x.Y()`", "`x.get().Y`"],
+      "codeBlockOptions": {},
+      "explanation": "[Reference getters](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/get)",
+      "correctAnswers": [1],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q34. What is the result of running this code?",
+      "codeBlock": [
+        "```js\nsum(10, 20);\ndiff(10, 20);\nfunction sum(x, y) {\n  return x + y;\n}\nlet diff = function (x, y) {\n  return x - y;\n};\n```"
+      ],
+      "options": [
+        "30, ReferenceError, 30, -10",
+        "30, ReferenceError",
+        "30, -10",
+        "ReferenceError, -10"
+      ],
+      "codeBlockOptions": {},
+      "explanation": "[Reference accessing before initialization](https://stackoverflow.com/questions/56318460/cannot-access-variable-name-before-initialization)",
+      "correctAnswers": [1],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q35. Why is it usually better to work with Objects instead of Arrays to store a collection of records?",
+      "codeBlock": [],
+      "options": [
+        "Objects are more efficient in terms of storage.",
+        "Adding a record to an object is significantly faster than pushing a record into an array.",
+        "Most operations involve looking up a record, and objects can do that better than arrays.",
+        "Working with objects makes the code more readable."
+      ],
+      "codeBlockOptions": {},
+      "explanation": "[Reference efficiency of lookups](https://stackoverflow.com/questions/17295056/array-vs-object-efficiency-in-javascript)",
+      "correctAnswers": [2],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q36. Which statement is true about the \"async\" attribute for the HTML script tag?",
+      "codeBlock": [],
+      "options": [
+        "It can be used for both internal and external JavaScript code.",
+        "It can be used only for internal JavaScript code.",
+        "It can be used only for internal or external JavaScript code that exports a promise.",
+        "It can be used only for external JavaScript code."
+      ],
+      "codeBlockOptions": {},
+      "explanation": "[Reference async attribute for html](https://www.w3schools.com/tags/att_script_async.asp)",
+      "correctAnswers": [3],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q37. How do you import the lodash library making it top-level Api available as the \"\\_\" variable?",
+      "codeBlock": [],
+      "options": [
+        "`import _ from 'lodash';`",
+        "`import 'lodash' as _;`",
+        "`import '_' from 'lodash;`",
+        "`import lodash as _ from 'lodash';`"
+      ],
+      "codeBlockOptions": {},
+      "explanation": "[Reference how to import library in js](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import)",
+      "correctAnswers": [0],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q38. What does the following expression evaluate to?",
+      "codeBlock": ["```js\n[] == [];\n```"],
+      "options": ["True", "undefined", "[]", "False"],
+      "codeBlockOptions": {},
+      "explanation": "[Reference arrays in js are objects](https://stackoverflow.com/questions/30820611/why-doesnt-equality-check-work-with-arrays)",
+      "correctAnswers": [3],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q39. What is the name of a function whose execution can be suspended and resumed at a later point? What type of function can have its execution suspended and then resumed at a later point?",
+      "codeBlock": [],
+      "options": [
+        "Generator function",
+        "Arrow function",
+        "Async/ Await function",
+        "Promise function"
+      ],
+      "codeBlockOptions": {},
+      "explanation": "[Reference what are generators in nodejs](https://www.guru99.com/node-js-generators-compare-callbacks.html#:~:text=Generators%20are%20function%20executions%20that,resumed%20at%20a%20later%20point.)",
+      "correctAnswers": [0],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q40. What will this code print?",
+      "codeBlock": [
+        "```js\nvar v = 1;\nvar f1 = function () {\n  console.log(v);\n};\nvar f2 = function () {\n  var v = 2;\n  f1();\n};\nf2();\n```"
+      ],
+      "options": [
+        "2",
+        "1",
+        "Nothing - this code will throw an error.",
+        "undefined"
+      ],
+      "codeBlockOptions": {},
+      "explanation": "[Reference closures in js \\/ nested functions](https://javascript.info/closure)",
+      "correctAnswers": [1],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q41. Which statement is true about Functional Programming?",
+      "codeBlock": [],
+      "options": [
+        "Every object in the program has to be a function.",
+        "Code is grouped with the state it modifies.",
+        "Date fields and methods are kept in units.",
+        "Side effects are not allowed."
+      ],
+      "codeBlockOptions": {},
+      "explanation": "[Reference functional programming](https://medium.com/javascript-scene/master-the-javascript-interview-what-is-functional-programming-7f218c68b3a0)",
+      "correctAnswers": [3],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q42. Your code is producing the error: TypeError: Cannot read property 'reduce' of undefined. What does that mean?",
+      "codeBlock": [],
+      "options": [
+        "You are calling a method named reduce on an object that's declared but has no value.",
+        "You are calling a method named reduce on an object that does not exist.",
+        "You are calling a method named reduce on an empty array.",
+        "You are calling a method named reduce on an object that's has a null value."
+      ],
+      "codeBlockOptions": {},
+      "explanation": "**Explanation**: `You cannot invoke reduce on undefined object... It will throw (yourObject is not Defined...)`",
+      "correctAnswers": [0],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q43. How many prototype objects are in the chain for the following array?",
+      "codeBlock": [],
+      "options": ["3", "2", "0", "1"],
+      "codeBlockOptions": {},
+      "explanation": "[Reference array prototype](https://www.w3schools.com/jsref/jsref_prototype_array.asp)",
+      "correctAnswers": [1],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q44. Which choice is _not_ a unary operator?",
+      "codeBlock": [],
+      "options": ["`typeof`", "`delete`", "`instanceof`", "`void`"],
+      "codeBlockOptions": {},
+      "explanation": "[Reference js unary operators](https://www.digitalocean.com/community/tutorials/javascript-unary-operators-simple-and-useful#:~:text=A%20unary%20operation%20is%20an,therefore%20their%20functionality%20is%20guaranteed.)",
+      "correctAnswers": [2],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q45. What type of scope does the end variable have in the code shown?",
+      "codeBlock": [
+        "```javascript\nvar start = 1;\nif (start === 1) {\n  let end = 2;\n}\n```"
+      ],
+      "options": ["conditional", "block", "global", "function"],
+      "codeBlockOptions": {},
+      "explanation": "[Reference block vs function scope](https://josephcardillo.medium.com/the-difference-between-function-and-block-scope-in-javascript-4296b2322abe)",
+      "correctAnswers": [1],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q46. What will the value of y be in this code:",
+      "codeBlock": [
+        "```js\nconst x = 6 % 2;\nconst y = x ? 'One' : 'Two';\n```"
+      ],
+      "options": ["One", "undefined", "TRUE", "Two"],
+      "codeBlockOptions": {},
+      "explanation": "[Reference ternary operator js](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator)",
+      "correctAnswers": [3],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q47. Which keyword is used to create an error?",
+      "codeBlock": [],
+      "options": ["`throw`", "`exception`", "`catch`", "`error`"],
+      "codeBlockOptions": {},
+      "explanation": "",
+      "correctAnswers": [0],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q48. What's one difference between the async and defer attributes of the HTML script tag?",
+      "codeBlock": [],
+      "options": [
+        "The defer attribute can work synchronously.",
+        "The defer attribute works only with generators.",
+        "The defer attribute works only with promises.",
+        "The defer attribute will asynchronously load the scripts in order."
+      ],
+      "codeBlockOptions": {},
+      "explanation": "[Reference async vs defer](https://www.digitalocean.com/community/tutorials/html-defer-async#:~:text=%3E-,Async%20vs%20Defer,order%20as%20they%20are%20called.)",
+      "correctAnswers": [3],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q49. The following program has a problem. What is it?",
+      "codeBlock": ["```js\nvar a;\nvar b = (a = 3) ? true : false;\n```"],
+      "options": [
+        "The condition in the ternary is using the assignment operator.",
+        "You can't define a variable without initializing it.",
+        "You can't use a ternary in the right-hand side of an assignment operator.",
+        "The code is using the deprecated var keyword."
+      ],
+      "codeBlockOptions": {},
+      "explanation": "[Reference ternary operator js](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator)",
+      "correctAnswers": [0],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q50. Which statement references the DOM node created by the code shown?",
+      "codeBlock": ["```html\n<p class=\"pull\">lorem ipsum</p>\n```"],
+      "options": [
+        "`Document.querySelector('class.pull')`",
+        "`document.querySelector('.pull');`",
+        "`Document.querySelector('pull')`",
+        "`Document.querySelector('#pull')`"
+      ],
+      "codeBlockOptions": {},
+      "explanation": "[Reference query selector](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector)",
+      "correctAnswers": [1],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q51. What value does this code return?",
+      "codeBlock": [
+        "```js\nlet answer = true;\nif (answer === false) {\n  return 0;\n} else {\n  return 10;\n}\n```"
+      ],
+      "options": ["10", "true", "false", "0"],
+      "codeBlockOptions": {},
+      "explanation": "[Reference javascript conditionals](https://www.javascript.com/learn/conditionals)",
+      "correctAnswers": [0],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q52. What is the result in the console of running the code shown?",
+      "codeBlock": [
+        "```js\nvar start = 1;\nfunction setEnd() {\n  var end = 10;\n}\nsetEnd();\nconsole.log(end);\n```"
+      ],
+      "options": ["10", "0", "ReferenceError", "undefined"],
+      "codeBlockOptions": {},
+      "explanation": "[Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures)",
+      "correctAnswers": [2],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q53. What will this code log in the console?",
+      "codeBlock": [
+        "```js\nfunction sayHello() {\n  console.log('hello');\n}\nconsole.log(sayHello.prototype);\n```"
+      ],
+      "options": [
+        "undefined",
+        "\"hello\"",
+        "an object with a constructor property",
+        "an error message"
+      ],
+      "codeBlockOptions": {},
+      "explanation": "[Reference prototypes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain)",
+      "correctAnswers": [2],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q54. Which collection object allows unique value to be inserted only once?",
+      "codeBlock": [],
+      "options": ["Object", "Set", "Array", "Map"],
+      "codeBlockOptions": {},
+      "explanation": "[Reference javascript sets](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set)",
+      "correctAnswers": [1],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q55. What two values will this code print?",
+      "codeBlock": [
+        "```js\nfunction printA() {\n  console.log(answer);\n  var answer = 1;\n}\nprintA();\nprintA();\n```"
+      ],
+      "options": [
+        "`1` then `1`",
+        "`1` then `undefined`",
+        "`undefined` then `undefined`",
+        "`undefined` then `1`"
+      ],
+      "codeBlockOptions": {},
+      "explanation": "[Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures)",
+      "correctAnswers": [2],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q56. How does the `forEach()` method differ from a `for` statement?",
+      "codeBlock": [],
+      "options": [
+        "forEach allows you to specify your own iterator, whereas for does not.",
+        "forEach can be used only with strings, whereas for can be used with additional data types.",
+        "forEach can be used only with an array, whereas for can be used with additional data types.",
+        "for loops can be nested; whereas forEach loops cannot."
+      ],
+      "codeBlockOptions": {},
+      "explanation": "[Reference Differences between forEach and for loop](https://www.geeksforgeeks.org/difference-between-foreach-and-for-loop-in-javascript/)",
+      "correctAnswers": [2],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q57. Which choice is an incorrect way to define an arrow function that returns an empty object?",
+      "codeBlock": [],
+      "options": ["=> `({})`", "=> `{}`", "=> `{ return {};}`", "=> `(({}))`"],
+      "codeBlockOptions": {},
+      "explanation": "[Reference arrow functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions)",
+      "correctAnswers": [1],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q58. Why might you choose to make your code asynchronous?",
+      "codeBlock": [],
+      "options": [
+        "to start tasks that might take some time without blocking subsequent tasks from executing immediately",
+        "to ensure that tasks further down in your code are not initiated until earlier tasks have completed",
+        "to make your code faster",
+        "to ensure that the call stack maintains a LIFO (Last in, First Out) structure"
+      ],
+      "codeBlockOptions": {},
+      "explanation": "**EXPLANATION:** \"to ensure that tasks further down in your code are not initiated until earlier tasks have completed\" you use the normal (synchronous) flow where each command is executed sequentially. Asynchronous code allows you to break this sequence: start a long running function (AJAX call to an external service) and continue running the rest of the code in parallel.",
+      "correctAnswers": [0],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q59. Which expression evaluates to true?",
+      "codeBlock": [],
+      "options": ["`[3] == [3]`", "`3 == '3'`", "`3 != '3'`", "`3 === '3'`"],
+      "codeBlockOptions": {},
+      "explanation": "[Reference booleans](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)",
+      "correctAnswers": [1],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q60. Which of these is a valid variable name?",
+      "codeBlock": [],
+      "options": ["5thItem", "firstName", "grand total", "function"],
+      "codeBlockOptions": {},
+      "explanation": "[Reference coding conventions](https://www.w3schools.com/js/js_conventions.asp)",
+      "correctAnswers": [1],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q61. Which method cancels event default behavior?",
+      "codeBlock": [],
+      "options": [
+        "`cancel()`",
+        "`stop()`",
+        "`preventDefault()`",
+        "`prevent()`"
+      ],
+      "codeBlockOptions": {},
+      "explanation": "[Reference javascript events](https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault)",
+      "correctAnswers": [2],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q62. Which method do you use to attach one DOM node to another?",
+      "codeBlock": [],
+      "options": [
+        "`attachNode()`",
+        "`getNode()`",
+        "`querySelector()`",
+        "`appendChild()`"
+      ],
+      "codeBlockOptions": {},
+      "explanation": "[Reference Node interface](https://developer.mozilla.org/en-US/docs/Web/API/Node/appendChild)",
+      "correctAnswers": [3],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q63. Which statement is used to skip iteration of the loop?",
+      "codeBlock": [],
+      "options": ["`break`", "`pass`", "`skip`", "`continue`"],
+      "codeBlockOptions": {},
+      "explanation": "[Reference break vs continue](https://www.w3schools.com/js/js_break.asp)",
+      "correctAnswers": [3],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q64. Which choice is valid example for an arrow function?",
+      "codeBlock": [],
+      "options": [
+        "`(a,b) => c`",
+        "`a, b => {return c;}`",
+        "`a, b => c`",
+        "`{ a, b } => c`"
+      ],
+      "codeBlockOptions": {},
+      "explanation": "[Reference arrow functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions)",
+      "correctAnswers": [0],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q65. Which concept is defined as a template that can be used to generate different objects that share some shape and/or behavior?",
+      "codeBlock": [],
+      "options": ["class", "generator function", "map", "proxy"],
+      "codeBlockOptions": {},
+      "explanation": "[Reference javascript classes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes)",
+      "correctAnswers": [0],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q66. How do you add a comment to JavaScript code?",
+      "codeBlock": [],
+      "options": [
+        "`! This is a comment`",
+        "`# This is a comment`",
+        "`\\\\ This is a comment`",
+        "`// This is a comment`"
+      ],
+      "codeBlockOptions": {},
+      "explanation": "[Reference comments in javascript](https://www.w3schools.com/js/js_comments.asp)",
+      "correctAnswers": [3],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q67. If you attempt to call a value as a function but the value is not a function, what kind of error would you get?",
+      "codeBlock": [],
+      "options": ["TypeError", "SystemError", "SyntaxError", "LogicError"],
+      "codeBlockOptions": {},
+      "explanation": "[Reference javascript errors](https://developer.mozilla.org/en-US/docs/web/javascript/reference/global_objects/error)",
+      "correctAnswers": [0],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q68. Which method is called automatically when an object is initialized?",
+      "codeBlock": [],
+      "options": ["create()", "new()", "constructor()", "init()"],
+      "codeBlockOptions": {},
+      "explanation": "[Reference javascript constructors](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/constructor)",
+      "correctAnswers": [2],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q69. What is the result of running the statement shown?",
+      "codeBlock": ["```javascript\nlet a = 5;\nconsole.log(++a);\n```"],
+      "options": ["4", "10", "6", "5"],
+      "codeBlockOptions": {},
+      "explanation": "[Reference ++x vs x++](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Increment)",
+      "correctAnswers": [2],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q70. You've written the event listener shown below for a form button, but each time you click the button, the page reloads. Which statement would stop this from happening?",
+      "codeBlock": [
+        "```javascript\nbutton.addEventListener(\n  'click',\n  function (e) {\n    button.className = 'clicked';\n  },\n  false,\n);\n```"
+      ],
+      "options": [
+        "`e.blockReload();`",
+        "`button.preventDefault();`",
+        "`button.blockReload();`",
+        "`e.preventDefault();`"
+      ],
+      "codeBlockOptions": {},
+      "explanation": "[Reference events in javascript](https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault)",
+      "correctAnswers": [3],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q71. Which statement represents the starting code converted to an IIFE?",
+      "codeBlock": [],
+      "options": [
+        "`function() { console.log('lorem ipsum'); }()();`",
+        "`function() { console.log('lorem ipsum'); }();`",
+        "`(function() { console.log('lorem ipsum'); })();`"
+      ],
+      "codeBlockOptions": {},
+      "explanation": "[Reference what is an Immediately Invoked Function Expression](https://javascript.plainenglish.io/https-medium-com-javascript-in-plain-english-stop-feeling-iffy-about-using-an-iife-7b0292aba174)",
+      "correctAnswers": [2],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q72. Which statement selects all img elements in the DOM tree?",
+      "codeBlock": [],
+      "options": [
+        "`Document.querySelector('img')`",
+        "`Document.querySelectorAll('<img>')`",
+        "`Document.querySelectorAll('img')`",
+        "`Document.querySelector('<img>')`"
+      ],
+      "codeBlockOptions": {},
+      "explanation": "[Reference query selctor](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector)",
+      "correctAnswers": [2],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q73. Why would you choose an asynchronous structure for your code?",
+      "codeBlock": [],
+      "options": [
+        "To use ES6 syntax",
+        "To start tasks that might take some time without blocking subsequent tasks from executing immediately",
+        "To ensure that parsers enforce all JavaScript syntax rules when processing your code",
+        "To ensure that tasks further down in your code aren't initiated until earlier tasks have completed"
+      ],
+      "codeBlockOptions": {},
+      "explanation": "[Reference async function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function)",
+      "correctAnswers": [1],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q74. What is the HTTP verb to request the contents of an existing resource?",
+      "codeBlock": [],
+      "options": ["DELETE", "GET", "PATCH", "POST"],
+      "codeBlockOptions": {},
+      "explanation": "[Reference http methods](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods)",
+      "correctAnswers": [1],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q75. Which event is fired on a text field within a form when a user tabs to it, or clicks or touches it?",
+      "codeBlock": [],
+      "options": ["focus", "blur", "hover", "enter"],
+      "codeBlockOptions": {},
+      "explanation": "[Reference javascript events](https://developer.mozilla.org/en-US/docs/Web/Events)",
+      "correctAnswers": [0],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q76. What is the result in the console of running this code?",
+      "codeBlock": [
+        "```javascript\nfunction logThis() {\n  console.log(this);\n}\nlogThis();\n```"
+      ],
+      "options": ["function", "undefined", "Function.prototype", "window"],
+      "codeBlockOptions": {},
+      "explanation": "[Reference what is the javascript window](https://www.w3schools.com/js/js_window.asp)",
+      "correctAnswers": [3],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q77. Which class-based component is equivalent to this function component?",
+      "codeBlock": [
+        "```javascript\nconst Greeting = ({ name }) => <h1>Hello {name}!</h1>;\n```"
+      ],
+      "options": [
+        "`class Greeting extends React.Component { render() { return <h1>Hello {this.props.name}!</h1>; } }`",
+        "`class Greeting extends React.Component { constructor() { return <h1>Hello {this.props.name}!</h1>; } }`",
+        "`class Greeting extends React.Component { <h>Hello {this.props.name}!</h>; } }`",
+        "`class Greeting extends React.Component { render({ name }) { return <h1>Hello {name}!</h1>; } }`"
+      ],
+      "codeBlockOptions": {},
+      "explanation": "",
+      "correctAnswers": [0],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q78. Which class-based lifecycle method would be called at the same time as this effect Hook?",
+      "codeBlock": [
+        "```javascript\nuseEffect(() => {\n  // do things\n}, []);\n```"
+      ],
+      "options": [
+        "componentWillUnmount",
+        "componentDidUpdate",
+        "render",
+        "componentDidMount"
+      ],
+      "codeBlockOptions": {},
+      "explanation": "[Reference react lifecycle methods](https://reactjs.org/docs/react-component.html)",
+      "correctAnswers": [3],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q79. What is the output of this code?",
+      "codeBlock": ["```javascript\nvar obj;\nconsole.log(obj);\n```"],
+      "options": [
+        "`ReferenceError: obj is not defined`",
+        "`{}`",
+        "`undefined`",
+        "`null`"
+      ],
+      "codeBlockOptions": {},
+      "explanation": "[Reference working with objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects)",
+      "correctAnswers": [2],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q80. How would you use the TaxCalculator to determine the amount of tax on \\$50?",
+      "codeBlock": [
+        "```javascript\nclass TaxCalculator {\n  static calculate(total) {\n    return total * 0.05;\n  }\n}\n```"
+      ],
+      "options": [
+        "calculate(50);",
+        "new TaxCalculator().calculate(\\$50);",
+        "TaxCalculator.calculate(50);",
+        "new TaxCalculator().calculate(50);"
+      ],
+      "codeBlockOptions": {},
+      "explanation": "[Reference functions in javascript](https://www.w3schools.com/js/js_functions.asp)",
+      "correctAnswers": [2],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q81. What is wrong with this code?",
+      "codeBlock": [
+        "```js\nconst foo = {\n  bar() {\n    console.log('Hello, world!');\n  },\n  name: 'Albert',\n  age: 26,\n};\n```"
+      ],
+      "options": [
+        "The function bar needs to be defined as a key/value pair.",
+        "Trailing commas are not allowed in JavaScript.",
+        "Functions cannot be declared as properties of objects.",
+        "Nothing, there are no errors."
+      ],
+      "codeBlockOptions": {},
+      "explanation": "[Reference working with objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects)",
+      "correctAnswers": [3],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q82. What will be logged to the console?",
+      "codeBlock": [
+        "```js\nconsole.log('I');\nsetTimeout(() => {\n  console.log('love');\n}, 0);\nconsole.log('Javascript!');\n```"
+      ],
+      "options": [
+        "",
+        "",
+        "The output may change with each execution of code and cannot be determined.",
+        ""
+      ],
+      "codeBlockOptions": {
+        "0": "```\nI\nJavascript!\nlove\n```",
+        "1": "```\nlove\nI\nJavascript!\n```",
+        "3": "```\nI\nlove\nJavascript!\n```"
+      },
+      "explanation": "[Reference call stack in js](https://www.javascripttutorial.net/javascript-call-stack/)",
+      "correctAnswers": [0],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": true
+    },
+    {
+      "title": "Q83. What will this code log to the console?",
+      "codeBlock": [
+        "```js\nconst foo = [1, 2, 3];\nconst [n] = foo;\nconsole.log(n);\n```"
+      ],
+      "options": [
+        "1",
+        "undefined",
+        "NaN",
+        "Nothing--this is not proper JavaScript syntax and will throw an error."
+      ],
+      "codeBlockOptions": {},
+      "explanation": "[Reference array deconstruction](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)",
+      "correctAnswers": [0],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q84. How do you remove the property name from this object?",
+      "codeBlock": ["```js\nconst foo = {\n  name: 'Albert',\n};\n```"],
+      "options": [
+        "delete name from foo;",
+        "delete foo.name;",
+        "del foo.name;",
+        "remove foo.name;"
+      ],
+      "codeBlockOptions": {},
+      "explanation": "[Reference working with objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects)",
+      "correctAnswers": [1],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q85. What is the difference between the map() and the forEach() methods on the Array prototype?",
+      "codeBlock": [],
+      "options": [
+        "There is no difference.",
+        "The `forEach()` method returns a single output value, wheras the `map()` method performs operation on each value in the array.",
+        "The map() methods returns a new array with a transformation applied on each item in the original array, wheras the `forEach()` method iterates through an array with noreturn value.",
+        "The `forEach()` methods returns a new array with a transformation applied on each item in the original array, wheras the `map()` method iterates through an array with noreturn value."
+      ],
+      "codeBlockOptions": {},
+      "explanation": "[Reference Differences between forEach and for loop](https://www.geeksforgeeks.org/difference-between-foreach-and-for-loop-in-javascript/)",
+      "correctAnswers": [2],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q86. Which concept does this code illustrate?",
+      "codeBlock": [
+        "```js\nfunction makeAdder(x) {\n  return function (y) {\n    return x + y;\n  };\n}\nvar addFive = makeAdder(5);\nconsole.log(addFive(3));\n```"
+      ],
+      "options": ["overloading", "closure", "currying", "overriding"],
+      "codeBlockOptions": {},
+      "explanation": "[Reference currying](https://javascript.info/currying-partials)",
+      "correctAnswers": [2],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q87. Which tag pair is used in HTML to embed JavaScript?",
+      "codeBlock": [],
+      "options": [
+        "`<script></script>`",
+        "`<js></js>`",
+        "`<javascript></javascript>`",
+        "`<code></code>`"
+      ],
+      "codeBlockOptions": {},
+      "explanation": "[Reference add js to html file](https://www.w3schools.com/tags/tag_script.asp)",
+      "correctAnswers": [0],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q88. What would be the result in the console of running this code?",
+      "codeBlock": [
+        "```js\nfor (var i = 0; i < 5; i++) {\n  console.log(i);\n}\n```"
+      ],
+      "options": ["0 1 2 3 4", "0 1 2 3 4 5", "1 2 3 4", "1 2 3 4 5"],
+      "codeBlockOptions": {},
+      "explanation": "[Reference Differences between forEach and for loop](https://www.geeksforgeeks.org/difference-between-foreach-and-for-loop-in-javascript/)",
+      "correctAnswers": [0],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q89. What is the value of dessert.type after executing this code?",
+      "codeBlock": [
+        "```js\nconst dessert = { type: 'pie' };\ndessert.type = 'pudding';\nconst seconds = dessert;\nseconds.type = 'fruit';\n```"
+      ],
+      "options": ["pie", "fruit", "undefined", "pudding"],
+      "codeBlockOptions": {},
+      "explanation": "**Explanation:** `Assigning a variable (such as seconds) to an object (such as dessert) does not create a new object. The seconds variable merely becomes a reference for the dessert object. Any changes made to seconds will also reflect in dessert.`",
+      "correctAnswers": [1],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q90. If your app receives data from a third-party API, which HTTP response header must the server specify to allow exceptions to the same-origin policy?",
+      "codeBlock": [],
+      "options": [
+        "Security-Mode",
+        "Access-Control-Allow-Origin",
+        "Different-Origin",
+        "Same-Origin"
+      ],
+      "codeBlockOptions": {},
+      "explanation": "[Reference Cross-Origin Resource Sharing](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)",
+      "correctAnswers": [1],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q91. What will be logged to the console??",
+      "codeBlock": [
+        "```js\n'use strict';\nfunction logThis() {\n  this.desc = 'logger';\n  console.log(this);\n}\nnew logThis();\n```"
+      ],
+      "options": ["window", "undefined", "function", "{desc: \"logger\"}"],
+      "codeBlockOptions": {},
+      "explanation": "[Reference strict in javascript classes](https://www.w3schools.com/js/js_strict.asp)",
+      "correctAnswers": [3],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q92. Which statement is applicable to the defer attribute of the HTML \\<script\\> tag?",
+      "codeBlock": [],
+      "options": [
+        "defer causes the script ta be loaded from the backup content delivery network (CDN).",
+        "defer allows the browser ta continue processing the page while the script loads in the background.",
+        "defer blacks the browser from processing HTML below the tag until the script is completely loaded.",
+        "defer lazy loads the script, causing it to download only when it is called by another script on the page."
+      ],
+      "codeBlockOptions": {},
+      "explanation": "**Explanation:** If the defer attribute is set, it specifies that the script is downloaded in parallel to parsing the page, and executed after the page has finished parsing. [HTML \\<script\\> defer Attribute](https://www.w3schools.com/tags/att_script_defer.asp)",
+      "correctAnswers": [1],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q93. What will this code print?",
+      "codeBlock": [
+        "```js\nlet rainForests = ['Amazon', 'Borneo', 'Cerrado', 'Congo'];\nrainForests.splice(0, 2);\nconsole.log(rainForests);\n```"
+      ],
+      "options": [
+        "`[\"Amazon\",\"Borneo\",\"Cerrado\",\"Congo\"]`",
+        "`[\"Cerrado\", \"Congo\"]`",
+        "`[\"Congo\"]`",
+        "`[\"Amazon\",\"Borneo\"]`"
+      ],
+      "codeBlockOptions": {},
+      "explanation": "[Reference array methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)",
+      "correctAnswers": [1],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q94. Which missing line would allow you to create five variables(one,two,three,four,five) that correspond to their numerical values (1,2,3,4,5)?",
+      "codeBlock": [
+        "```js\nconst numbers = [1, 2, 3, 4, 5];\n//MISSING LINE\n```"
+      ],
+      "options": [
+        "`const [one,two,three,four,five]=numbers`",
+        "`const {one,two,three,four,five}=numbers`",
+        "`const [one,two,three,four,five]=[numbers]`",
+        "`const {one,two,three,four,five}={numbers}`"
+      ],
+      "codeBlockOptions": {},
+      "explanation": "[Reference array destructuring](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)",
+      "correctAnswers": [0],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q95.",
+      "codeBlock": [
+        "```js\nconst obj = {\n  a: 1,\n  b: 2,\n  c: 3,\n};\nconst obj2 = {\n  ...obj,\n  a: 0,\n};\nconsole.log(obj2.a, obj2.b);\n```"
+      ],
+      "options": [
+        "Nothing, it will throw an error",
+        "0 2",
+        "undefined 2",
+        "undefined 2"
+      ],
+      "codeBlockOptions": {},
+      "explanation": "[Reference spread syntax es6](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax)",
+      "correctAnswers": [1],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "### Q96. Which line could you add to this code to print \"jaguar\" to the console?",
+      "codeBlock": [
+        "```js\nlet animals = ['jaguar', 'eagle'];\n//Missing Line\nconsole.log(animals.pop()); //Prints jaguar\n```"
+      ],
+      "options": [
+        "`animals.filter(e => e === \"jaguar\");`",
+        "`animals.reverse();`",
+        "`animals.shift();`",
+        "`animals.pop();`"
+      ],
+      "codeBlockOptions": {},
+      "explanation": "[Reference Javascript Array Reverse](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reverse)",
+      "correctAnswers": [3],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q97. What line is missing from this code?",
+      "codeBlock": [
+        "```js\n//Missing Line\nfor (var i = 0; i < vowels.length; i++) {\n  console.log(vowels[i]);\n  //Each letter printed on a separate line as follows;\n  //a\n  //e\n  //i\n  //o\n  //u\n}\n```"
+      ],
+      "options": [
+        "`let vowels = \"aeiou\".toArray();`",
+        "`let vowels = Array.of(\"aeiou\");`",
+        "`let vowels = {\"a\", \"e\", \"i\", \"o\", \"u\"};`",
+        "`let vowels = \"aeiou\";`"
+      ],
+      "codeBlockOptions": {},
+      "explanation": "[Reference working with arrays](https://www.w3schools.com/js/js_arrays.asp)",
+      "correctAnswers": [3],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q98. What will be logged to the console?",
+      "codeBlock": [
+        "```js\nconst x = 6 % 2;\nconst y = x ? 'One' : 'Two';\nconsole.log(y);\n```"
+      ],
+      "options": ["undefined", "One", "true", "Two"],
+      "codeBlockOptions": {},
+      "explanation": "[Reference ternary operator js](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator)",
+      "correctAnswers": [3],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q99. How would you access the word It from this multidimensional array?",
+      "codeBlock": [],
+      "options": [
+        "`matrix[1[2]]`",
+        "`matrix[1][1]`",
+        "`matrix[1,2]`",
+        "`matrix[1][2]`"
+      ],
+      "codeBlockOptions": {},
+      "explanation": "",
+      "correctAnswers": [1],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q100. What does this code do?",
+      "codeBlock": [
+        "```js\nconst animals = ['Rabbit', 'Dog', 'Cat'];\nanimals.unshift('Lizard');\n```"
+      ],
+      "options": [
+        "It adds \"Lizard\" to the start of the animals array.",
+        "It adds \"Lizard\" to the end of the animals array.",
+        "It replaces \"Rabbit\" with \"Lizard\" in the animals array.",
+        "It replaces \"Cat\" with \"Lizard\" in the animals array."
+      ],
+      "codeBlockOptions": {},
+      "explanation": "[Reference working with arrays](https://www.w3schools.com/js/js_arrays.asp)",
+      "correctAnswers": [0],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q101. What is the output of this code?",
+      "codeBlock": ["```js\nlet x = 6 + 3 + '3';\nconsole.log(x);\n```"],
+      "options": ["93", "12", "66", "633"],
+      "codeBlockOptions": {},
+      "explanation": "[Reference type coercion](https://www.freecodecamp.org/news/js-type-coercion-explained-27ba3d9a2839/)",
+      "correctAnswers": [0],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q102. Which statement can take a single expression as input and then look through a number of choices until one that matches that value is found?",
+      "codeBlock": [],
+      "options": ["else", "when", "if", "switch"],
+      "codeBlockOptions": {},
+      "explanation": "[Reference switch](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/switch)",
+      "correctAnswers": [3],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "### Q103. Which statement prints \"roar\" to the console?",
+      "codeBlock": [
+        "```js\nvar sound = 'grunt';\nvar bear = {\n  sound: 'roar',\n};\nfunction roar() {\n  console.log(this.sound);\n}\n```"
+      ],
+      "options": [
+        "`bear.bind(roar);`",
+        "`roar.bind(bear);`",
+        "`roar.apply(bear);`",
+        "`bear[roar]();`"
+      ],
+      "codeBlockOptions": {},
+      "explanation": "[Reference bind](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_objects/Function/bind)",
+      "correctAnswers": [2],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q104. Which choice is a valid example of an arrow function, assuming c is defined in the outer scope?",
+      "codeBlock": [],
+      "options": [
+        "`a, b => { return c; }`",
+        "`a, b => c`",
+        "`{ a, b } => c`",
+        "`(a,b) => c`"
+      ],
+      "codeBlockOptions": {},
+      "explanation": "[Reference arrow functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions)",
+      "correctAnswers": [3],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q105. Which code would you use to access the Irish flag?",
+      "codeBlock": [
+        "```javascript\nvar flagsJSON =\n  '{ \"countries\" : [' +\n  '{ \"country\":\"Ireland\" , \"flag\":\"🇮🇪\" },' +\n  '{ \"country\":\"Serbia\" , \"flag\":\"🇷🇸\" },' +\n  '{ \"country\":\"Peru\" , \"flag\":\"🇵🇪\" } ]}';\nvar flagDatabase = JSON.parse(flagsJSON);\n```"
+      ],
+      "options": [
+        "flagDatabase.countries[0].flag",
+        "flagDatabase.countries[1].flag",
+        "flagsJSON.countries[0].flag",
+        "flagDatabase[1].flag"
+      ],
+      "codeBlockOptions": {},
+      "explanation": "[Reference working with objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects)",
+      "correctAnswers": [0],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q106. Which statement correctly imports this code from some-file.js?",
+      "codeBlock": [
+        "```js\n//some-file.js\nexport const printMe = (str) => console.log(str);\n```"
+      ],
+      "options": [
+        "`import printMe from './some-file';`",
+        "`import { printMe } from './some-file';`",
+        "`import default as printMe from './some-file';`",
+        "`const printMe = import './some-file';`"
+      ],
+      "codeBlockOptions": {},
+      "explanation": "[Reference importing libraries in javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import)",
+      "correctAnswers": [1],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q107. What will be the output of this code?",
+      "codeBlock": [
+        "```js\nconst arr1 = [2, 4, 6];\nconst arr2 = [3, 5, 7];\nconsole.log([...arr1, ...arr2]);\n```"
+      ],
+      "options": [
+        "`[2, 3, 4, 5, 6, 7]`",
+        "`[3,5,7,2,4,6]`",
+        "`[3, 5, 7, 2, 4, 6]`",
+        "`[[2, 4, 6], [3, 5, 7]]`",
+        "`[2, 4, 6, 3, 5, 7]`"
+      ],
+      "codeBlockOptions": {},
+      "explanation": "[Reference spread syntax](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax)",
+      "correctAnswers": [4],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q108. Which method call is chained to handle a successful response returned by `fetch()`?",
+      "codeBlock": [],
+      "options": ["`done()`", "`then()`", "`finally()`", "`catch()`"],
+      "codeBlockOptions": {},
+      "explanation": "[Reference fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch)",
+      "correctAnswers": [1],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q109. Which choice is not an array method?",
+      "codeBlock": [],
+      "options": [
+        "`array.slice()`",
+        "`array.shift()`",
+        "`array.push()`",
+        "`array.replace()`"
+      ],
+      "codeBlockOptions": {},
+      "explanation": "[Reference working with arrays](https://www.w3schools.com/js/js_arrays.asp)",
+      "correctAnswers": [3],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q110. Which JavaScript loop ensures that at least a singular iteration will happen?",
+      "codeBlock": [],
+      "options": ["do…while", "forEach", "while", "for"],
+      "codeBlockOptions": {},
+      "explanation": "[Reference loops in js](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/do...while)",
+      "correctAnswers": [0],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q111. What will be logged to the console?",
+      "codeBlock": ["```javascript\nconsole.log(typeof 'blueberry');\n```"],
+      "options": ["`string`", "`array`", "`Boolean`", "`object`"],
+      "codeBlockOptions": {},
+      "explanation": "[Reference what is typeof](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof)",
+      "correctAnswers": [0],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q112. What is the output that is printed when the div containing the text \"Click Here\" is clicked?",
+      "codeBlock": [
+        "```html\n//HTML Markup\n<div id=\"A\">\n  <div id=\"B\">\n    <div id=\"C\">Click Here</div>\n  </div>\n</div>\n```",
+        "```javascript\n//JavaScript\ndocument.querySelectorAll('div').forEach((e) => {\n  e.onclick = (e) => console.log(e.currentTarget.id);\n});\n```"
+      ],
+      "options": ["C B A", "A", "C", "A B C"],
+      "codeBlockOptions": {},
+      "explanation": "[Reference events](https://developer.mozilla.org/en-US/docs/Web/Events)",
+      "correctAnswers": [0],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q113. What will this code log to the console?",
+      "codeBlock": [
+        "```js\nconst myNumbers = [1, 2, 3, 4, 5, 6, 7];\nconst myFunction = (arr) => {\n  return arr.map((x) => x + 3).filter((x) => x < 7);\n};\nconsole.log(myFunction(myNumbers));\n```"
+      ],
+      "options": ["[4,5,6,7,8,9,10]", "[4,5,6,7]", "[1,2,3,4,5,6]", "[4,5,6]"],
+      "codeBlockOptions": {},
+      "explanation": "[Reference functions in javascript](https://www.w3schools.com/js/js_functions.asp)",
+      "correctAnswers": [3],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q114. What does this code print to the console?",
+      "codeBlock": [
+        "```js\nlet rainForestAcres = 10;\nlet animals = 0;\nwhile (rainForestAcres < 13 || animals <= 2) {\n  rainForestAcres++;\n  animals += 2;\n}\nconsole.log(animals);\n```"
+      ],
+      "options": ["2", "4", "6", "8"],
+      "codeBlockOptions": {},
+      "explanation": "[Reference MDN JavaScript Looping code](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Looping_code)",
+      "correctAnswers": [2],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q115. Which snippet could you add to this code to print \"YOU GOT THIS\" to the console?",
+      "codeBlock": [
+        "```js\nlet cipherText = [...'YZOGUT QGMORTZ MTRHTILS'];\nlet plainText = '';\n/* Missing Snippet */\nconsole.log(plainText); //Prints YOU GOT THIS\n```"
+      ],
+      "options": ["", "", "", ""],
+      "codeBlockOptions": {
+        "0": "```js\nfor (let key of cipherText.keys()) {\n  plainText += key % 2 === 0 ? key : ' ';\n}\n```",
+        "1": "```js\nfor (let [index, value] of cipherText.entries()) {\n  plainText += index % 2 !== 0 ? value : '';\n}\n```",
+        "2": "```js\nfor (let [index, value] of cipherText.entries()) {\n  plainText += index % 2 === 0 ? value : '';\n}\n```",
+        "3": "```js\nfor (let value of cipherText) {\n  plainText += value;\n}\n```"
+      },
+      "explanation": "[Reference MDN JavaScript Remainder/Modulo](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Remainder)",
+      "correctAnswers": [2],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": true
+    },
+    {
+      "title": "Q116. What will this code log to the console?",
+      "codeBlock": [],
+      "options": [
+        "undefined",
+        "1",
+        "NaN",
+        "Nothing. This is not proper JavaScript syntax and will throw an error."
+      ],
+      "codeBlockOptions": {},
+      "explanation": "",
+      "correctAnswers": [1],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q117. Which Pokemon will be logged to the console?",
+      "codeBlock": [],
+      "options": ["Charmander", "Jigglypuff", "Snorlax", "Squirtle"],
+      "codeBlockOptions": {},
+      "explanation": "`The pop() method removes the last element from an array and returns that element. This method changes the length of the array.` [(Source)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/pop)",
+      "correctAnswers": [0],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q118. Which snippet allows the `acresOfRainForest` variable to increase?",
+      "codeBlock": [
+        "```js\nlet conservation = true;\nlet deforestation = false;\nlet acresOfRainForest = 100;\nif(/* Snippet goes here */){\n    ++acresOfRainForest;\n}\n```"
+      ],
+      "options": [
+        "`!deforestation && !conservation`",
+        "`deforestation && conservation || deforestation`",
+        "`conservation && !deforestation`",
+        "`!conservation || deforestation`"
+      ],
+      "codeBlockOptions": {},
+      "explanation": "[if...else statements reference](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/conditionals#if...else_statements)",
+      "correctAnswers": [2],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q119. Which statement can be used to select the element from the DOM containing the text \"The LinkedIn Learning library has great JavaScript courses\" from this markup?",
+      "codeBlock": [
+        "```html\n<h1 class=\"content\">LinkedIn Learning</h1>\n<div class=\"content\">\n  <span class=\"content\">The LinkedIn Learning library has great JavaScript courses!</span>\n</div>\n```"
+      ],
+      "options": [],
+      "codeBlockOptions": {},
+      "explanation": "",
+      "correctAnswers": [],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    }
+  ]
+}

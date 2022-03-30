@@ -1,0 +1,705 @@
+{
+  "questions": [
+    {
+      "title": "Q1. What do you need for two functions to be the same type?",
+      "codeBlock": [],
+      "options": [
+        "They should share the same signatures, including parameter types and return types.",
+        "They should share the same parameter types but can return different types.",
+        "All functions should be the same type.",
+        "The functions should not be a first class type."
+      ],
+      "codeBlockOptions": {},
+      "explanation": "[User defined function types in Go (Golang)](https://golangbyexample.com/user-defined-function-type-go/)",
+      "correctAnswers": [
+        0
+      ],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q2. What does the `len()` function return if passed a UTF-8 encoded string?",
+      "codeBlock": [],
+      "options": [
+        "the number of characters",
+        "the number of bytes",
+        "It does not accept string types.",
+        "the number of code points"
+      ],
+      "codeBlockOptions": {},
+      "explanation": "[Length of string in Go (Golang)](https://golangbyexample.com/length-of-string-golang/).",
+      "correctAnswers": [
+        1
+      ],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q3. Which is _not_ a valid loop construct in Go?",
+      "codeBlock": [],
+      "options": [
+        "`do { ... } while i < 5`",
+        "`for _,c := range \"hello\" { ... }`",
+        "`for i := 1; i < 5; i++ { ... }`",
+        "`for i < 5 { ... }`"
+      ],
+      "codeBlockOptions": {},
+      "explanation": "",
+      "correctAnswers": [
+        0
+      ],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q4. How will you add the number 3 to the right side?",
+      "codeBlock": [],
+      "options": [
+        "`values.append(3)`",
+        "`values.insert(3, 3)`",
+        "`append(values, 3)`",
+        "`values = append(values, 3)`"
+      ],
+      "codeBlockOptions": {},
+      "explanation": "",
+      "correctAnswers": [
+        3
+      ],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q5. What is the value of `Read`?",
+      "codeBlock": [
+        "```go\nconst (\n  Write = iota\n  Read\n  Execute\n)\n```"
+      ],
+      "options": [
+        "0",
+        "1",
+        "2",
+        "a random value"
+      ],
+      "codeBlockOptions": {},
+      "explanation": "[IOTA in Go (Golang)](https://golangbyexample.com/iota-in-golang/)",
+      "correctAnswers": [
+        1
+      ],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q6. Which is the _only_ valid import statement in Go?",
+      "codeBlock": [],
+      "options": [
+        "`import \"github/gin-gonic/gin\"`",
+        "`import \"https://github.com/gin-gonic/gin\"`",
+        "`import \"../template\"`",
+        "`import \"github.com/gin-gonic/gin\"`"
+      ],
+      "codeBlockOptions": {},
+      "explanation": "[Import in GoLang](https://golangdocs.com/import-in-golang)",
+      "correctAnswers": [
+        3
+      ],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q7. What would happen if you attempted to compile and run this Go program?",
+      "codeBlock": [
+        "```go\npackage main\nvar GlobalFlag string\nfunc main() {\n  print(\"[\"+GlobalFlag+\"]\")\n}\n```"
+      ],
+      "options": [
+        "It would not compile because `GlobalFlag` was never initialized.",
+        "It would compile and print `[]`.",
+        "It would compile and print nothing because `\"[\" +nil+\"]\"` is also `nil`.",
+        "It would compile but then panic because `GlobalFlag` was never initialized."
+      ],
+      "codeBlockOptions": {},
+      "explanation": "[Go Playground](https://play.golang.org/p/TaRIzuD-nxC)",
+      "correctAnswers": [
+        1
+      ],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q8. From where is the variable `myVar` accessible if it is declared outside of any functions in a file in package `myPackage` located inside module `myModule`?",
+      "codeBlock": [],
+      "options": [
+        "It can be accessed anywhere inside `myPackage`, not the rest of myModule.",
+        "It can be accessed by any application that imports `myModule`.",
+        "It can be accessed from anywhere in `myModule`.",
+        "It can be accessed by other packages in `myModule` as long as they import `myPackage`"
+      ],
+      "codeBlockOptions": {},
+      "explanation": "See also an example of [Exported names](https://tour.golang.org/basics/3) in the Tour of Go.",
+      "correctAnswers": [
+        0
+      ],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q9. How do you tell `go test` to print out the tests it is running?",
+      "codeBlock": [],
+      "options": [
+        "`go test`",
+        "`go test -x`",
+        "`go test --verbose`",
+        "`go test -v`"
+      ],
+      "codeBlockOptions": {},
+      "explanation": "[test package](https://pkg.go.dev/cmd/go/internal/test)",
+      "correctAnswers": [
+        3
+      ],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q10. This code printed `{0, 0}`. How can you fix it?",
+      "codeBlock": [
+        "```go\ntype Point struct {\n  x int\n  y int\n}\nfunc main() {\n  data := []byte(`{\"x\":1, \"y\": 2}`)\n  var p Point\n  if err := json.Unmarshal(data, &p); err != nil {\n    fmt.Println(\"error: \", err)\n  } else {\n    fmt.Println(p)\n  }\n}\n```"
+      ],
+      "options": [
+        "use `json.Decoder`",
+        "Pass a pointer to `data`",
+        "Make `X` and `Y` exported (uppercase)",
+        "Use field tags"
+      ],
+      "codeBlockOptions": {},
+      "explanation": "[Go Playground](https://play.golang.org/p/RdL6y3Zv8ke)",
+      "correctAnswers": [
+        2
+      ],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q11. What does a `sync.Mutex` block white it is locked?",
+      "codeBlock": [],
+      "options": [
+        "all goroutines",
+        "any other call to lock that `Mutex`",
+        "any reads or writes of the variable it is locking",
+        "any writes to the variable it is locking"
+      ],
+      "codeBlockOptions": {},
+      "explanation": "[Mutex in GoLang](https://golangdocs.com/mutex-in-golang)",
+      "correctAnswers": [
+        1
+      ],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q12. What is an idiomatic way to pause execution of the current scope until an arbitrary number of goroutines have returned?",
+      "codeBlock": [],
+      "options": [
+        "Pass an `int` and `Mutex` to each and count when they return.",
+        "Loop over a `select` statement.",
+        "Sleep for a safe amount of time.",
+        "`sync.WaitGroup`"
+      ],
+      "codeBlockOptions": {},
+      "explanation": "Explanation: this is exactly what `sync.WaitGroup` is designed for - [Use sync.WaitGroup in Golang](https://nanxiao.me/en/use-sync-waitgroup-in-golang/)",
+      "correctAnswers": [
+        3
+      ],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q13. What is a side effect of using `time.After` in a `select` statement?",
+      "codeBlock": [],
+      "options": [
+        "It blocks the other channels.",
+        "It is meant to be used in select statements without side effects.",
+        "It blocks the `select` statement until the time has passed.",
+        "The goroutine does not end until the time passes."
+      ],
+      "codeBlockOptions": {},
+      "explanation": "",
+      "correctAnswers": [
+        1
+      ],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q14. What is the select statement used for?",
+      "codeBlock": [],
+      "options": [
+        "executing a function concurrently",
+        "executing a different case based on the type of a variable",
+        "executing a different case based on the value of a variable",
+        "executing a different case based on which channel returns first"
+      ],
+      "codeBlockOptions": {},
+      "explanation": "",
+      "correctAnswers": [
+        3
+      ],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q15. According to the Go documentation standard, how should you document this function?",
+      "codeBlock": [
+        "```go\nfunc Add(a, b int) {\n  return a + b\n}\n```"
+      ],
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "codeBlockOptions": {
+        "0": "```go\n// Calculate a + b\n// - a: int\n// - b: int\n// - returns: int\nfunc Add(a, b int) {\n  return a + b\n}\n```",
+        "1": "```go\n// Does a + b\nfunc Add(a, b int) {\n  return a + b\n}\n```",
+        "2": "```go\n// Add returns the sum of a and b\nfunc Add(a, b int) {\n  return a + b\n}\n```",
+        "3": "```go\n// returns the sum of a and b\nfunc Add(a, b int) {\n  return a + b\n}\n```"
+      },
+      "explanation": "",
+      "correctAnswers": [
+        2
+      ],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": true
+    },
+    {
+      "title": "Q16. What restriction is there on the type of `var` to compile this `i := myVal.(int)?`",
+      "codeBlock": [],
+      "options": [
+        "`myVal` must be an integer type, such as `int`, `int64`, `int32`, etc.",
+        "`myVal` must be able to be asserted as an `int`.",
+        "`myVal` must be an interface.",
+        "`myVal` must be a numeric type, such as `float64` or `int64`."
+      ],
+      "codeBlockOptions": {},
+      "explanation": "[Go Playground](https://play.golang.org/p/TXF_JBvThp6)",
+      "correctAnswers": [
+        2
+      ],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q17. What is a channel?",
+      "codeBlock": [],
+      "options": [
+        "a global variable",
+        "a medium for sending values between goroutines",
+        "a dynamic array of values",
+        "a lightweight thread for concurrent programming"
+      ],
+      "codeBlockOptions": {},
+      "explanation": "[Channels](https://tour.golang.org/concurrency/2)",
+      "correctAnswers": [
+        1
+      ],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q18. How can you make a file build only on Windows?",
+      "codeBlock": [],
+      "options": [
+        "Check runtime.GOOS.",
+        "Add a // +build windows comment anywhere in the file.",
+        "Add a \\_ prefix to the file name.",
+        "Add a // +build windows comment at the top of the file."
+      ],
+      "codeBlockOptions": {},
+      "explanation": "[How to use conditional compilation with the go build tool, Oct 2013](https://dave.cheney.net/2013/10/12/how-to-use-conditional-compilation-with-the-go-build-tool)",
+      "correctAnswers": [
+        3
+      ],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q19. What is the correct way to pass this as a body of an HTTP POST request?",
+      "codeBlock": [
+        "```go\ndata := \"A group of Owls is called a parliament\"\n```"
+      ],
+      "options": [
+        "resp, err := http.Post(\"https://httpbin.org/post\", \"text/plain\", []byte(data))",
+        "resp, err := http.Post(\"https://httpbin.org/post\", \"text/plain\", data)",
+        "resp, err := http.Post(\"https://httpbin.org/post\", \"text/plain\", strings.NewReader(data))",
+        "resp, err := http.Post(\"https://httpbin.org/post\", \"text/plain\", &data)"
+      ],
+      "codeBlockOptions": {},
+      "explanation": "[net/http#Client.Post](https://pkg.go.dev/net/http#Client.Post)",
+      "correctAnswers": [
+        2
+      ],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q20. What should the idiomatic name be for an interface with a single method and the signature `Save() error`?",
+      "codeBlock": [],
+      "options": [
+        "Saveable",
+        "SaveInterface",
+        "ISave",
+        "Saver"
+      ],
+      "codeBlockOptions": {},
+      "explanation": "[Effective Go, Interface names](https://golang.org/doc/effective_go#interface-names)",
+      "correctAnswers": [
+        3
+      ],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q21. A `switch` statement **\\_** its own lexical block. Each `case` statement **\\_** an additional lexical block.",
+      "codeBlock": [],
+      "options": [
+        "does not create; creates",
+        "does not create; does not create",
+        "creates; creates",
+        "creates; does not create"
+      ],
+      "codeBlockOptions": {},
+      "explanation": "[Go Language Core technology (Volume one) 1.5-scope](https://topic.alibabacloud.com/a/go-language-core-technology-volume-one-15-font-colorredscopefont_1_38_30923325.html)",
+      "correctAnswers": [
+        2
+      ],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q22. What is the default case sensitivity of the JSON `Unmarshal` function?",
+      "codeBlock": [],
+      "options": [
+        "The default behavior is case insensitive, but it can be overridden.",
+        "Fields are matched case sensitive.",
+        "Fields are matched case insensitive.",
+        "The default behavior is case sensitive, but it can be overridden."
+      ],
+      "codeBlockOptions": {},
+      "explanation": "[encoding/json#Unmarshal](https://pkg.go.dev/encoding/json#Unmarshal)",
+      "correctAnswers": [
+        0
+      ],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q23. What is the difference between the `time` package’s `Time.Sub()` and `Time.Add()` methods?",
+      "codeBlock": [],
+      "options": [
+        "Time.Add() is for performing addition while Time.Sub() is for nesting timestamps.",
+        "Time.Add() always returns a later time while time.Sub always returns an earlier time.",
+        "They are opposites. Time.Add(x) is the equivalent of Time.Sub(-x).",
+        "Time.Add() accepts a Duration parameter and returns a Time while Time.Sub() accepts a Time parameter and returns a Duration."
+      ],
+      "codeBlockOptions": {},
+      "explanation": "[time#Time.Sub](https://pkg.go.dev/time#Time.Sub)",
+      "correctAnswers": [
+        3
+      ],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q24. What is the risk of using multiple field tags in a single struct?",
+      "codeBlock": [],
+      "options": [
+        "Every field must have all tags to compile.",
+        "It tightly couples different layers of your application.",
+        "Any tags after the first are ignored.",
+        "Missing tags panic at runtime."
+      ],
+      "codeBlockOptions": {},
+      "explanation": "[Example Code / b29r0fUD1cp](https://play.golang.org/p/b29r0fUD1cp)",
+      "correctAnswers": [
+        1
+      ],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q25. Where is the built-in recover method useful?",
+      "codeBlock": [],
+      "options": [
+        "in the main function",
+        "immediately after a line that might panic",
+        "inside a deferred function",
+        "at the beginning of a function that might panic"
+      ],
+      "codeBlockOptions": {},
+      "explanation": "[Example of Recover Function in Go (Golang)](https://golangbot.com/panic-and-recover/#recoveringfromapanic)",
+      "correctAnswers": [
+        2
+      ],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q26. Which choice does _not_ send output to standard error?",
+      "codeBlock": [],
+      "options": [
+        "println(message)",
+        "log.New(os.Stderr, \"\", 0).Println(message)",
+        "fmt.Errorf(\"%s\\n\", message)",
+        "fmt.Fprintln(os.Stderr, message)"
+      ],
+      "codeBlockOptions": {},
+      "explanation": "",
+      "correctAnswers": [
+        0
+      ],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q27. How can you tell Go to import a package from a different location?",
+      "codeBlock": [],
+      "options": [
+        "Use a proxy.",
+        "Change the import path.",
+        "Use a replace directive in go.mod.",
+        "Use a replace directory."
+      ],
+      "codeBlockOptions": {},
+      "explanation": "",
+      "correctAnswers": [
+        2
+      ],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q28. If your current working directory is the top level of your project, which command will run all its test packages?",
+      "codeBlock": [],
+      "options": [
+        "go test all",
+        "go run --all",
+        "go test .",
+        "go test ./..."
+      ],
+      "codeBlockOptions": {},
+      "explanation": "[Example of cmd in Go (Golang)](https://pkg.go.dev/cmd/go)",
+      "correctAnswers": [
+        3
+      ],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q29. Which encodings can you put in a string?",
+      "codeBlock": [],
+      "options": [
+        "any, it accepts arbitary bytes",
+        "any Unicode format",
+        "UTF-8 or ASCII",
+        "UTF-8"
+      ],
+      "codeBlockOptions": {},
+      "explanation": "[Example of encoding in Go (Golang)](https://pkg.go.dev/golang.org/x/text/encoding)",
+      "correctAnswers": [
+        3
+      ],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q30. How is the behavior of `t.Fatal` different inside a `t.Run`?",
+      "codeBlock": [],
+      "options": [
+        "There is no difference.",
+        "t.Fatal does not crash the test harness, preserving output messages.",
+        "t.Fatal stops execution of the subtest and continues with other test cases.",
+        "t.Fatal stops all tests and contains extra information about the failed subtest."
+      ],
+      "codeBlockOptions": {},
+      "explanation": "[Reference:](https://go.dev/play/p/gtne3iRL9AX)",
+      "correctAnswers": [
+        2
+      ],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q31. What does `log.Fatal` do?",
+      "codeBlock": [],
+      "options": [
+        "It raises a panic.",
+        "It prints the log and then raises a panic.",
+        "It prints the log and then safely exits the program.",
+        "It exits the program."
+      ],
+      "codeBlockOptions": {},
+      "explanation": "[Example of func Fatal in Go (Golang)](https://pkg.go.dev/log#Fatal)",
+      "correctAnswers": [
+        2
+      ],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q32. Which is a valid Go time format literal?",
+      "codeBlock": [],
+      "options": [
+        "\"2006-01-02\"",
+        "\"YYYY-mm-dd\"",
+        "\"y-mo-d\"",
+        "\"year-month-day\""
+      ],
+      "codeBlockOptions": {},
+      "explanation": "[Example of func Time in Go (Golang)](https://pkg.go.dev/time)",
+      "correctAnswers": [
+        0
+      ],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q33. How should you log an error (err)",
+      "codeBlock": [],
+      "options": [
+        "`log.Error(err)`",
+        "`log.Printf(\"error: %v\", err)`",
+        "`log.Printf(log.ERROR, err)`",
+        "`log.Print(\"error: %v\", err)`"
+      ],
+      "codeBlockOptions": {},
+      "explanation": "Explanation: There is defined neither log.ERROR, nor log.Error() in [log package](https://pkg.go.dev/log); log.Print() arguments are handled in the manner of fmt.Print(); log.Printf() arguments are handled in the manner of fmt.Printf().",
+      "correctAnswers": [
+        1
+      ],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q34. How does a `sync.Mutex` block while it is locked?",
+      "codeBlock": [],
+      "options": [
+        "any other call to lock that Mutex",
+        "all goroutines",
+        "any writes to the variable it is locking",
+        "any reads or writes of the variable is it locking"
+      ],
+      "codeBlockOptions": {},
+      "explanation": "",
+      "correctAnswers": [
+        0
+      ],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q35. Which file names will the `go test` command recognize as test files?",
+      "codeBlock": [],
+      "options": [
+        "any that starts with `test`",
+        "any files that include the word `test`",
+        "only files in the root directory that end in `_test.go`",
+        "any that ends in `_test.go`"
+      ],
+      "codeBlockOptions": {},
+      "explanation": "",
+      "correctAnswers": [
+        3
+      ],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q36. What will be the output of this code?",
+      "codeBlock": [
+        "```\nch := make(chan int)\nch <- 7\nval := <-ch\nfmt.Println(val)\n```"
+      ],
+      "options": [
+        "0",
+        "It will deadlock",
+        "It will not compile",
+        "2.718"
+      ],
+      "codeBlockOptions": {},
+      "explanation": "",
+      "correctAnswers": [
+        1
+      ],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q37. What will be the output of this program?",
+      "codeBlock": [
+        "```\nch := make(chan int)\nclose(ch)\nval := <-ch\nfmt.Println(val)\n```"
+      ],
+      "options": [
+        "It will deadlock",
+        "It will panic",
+        "0",
+        "NaN"
+      ],
+      "codeBlockOptions": {},
+      "explanation": "",
+      "correctAnswers": [
+        2
+      ],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q38. What will be printed in this code?",
+      "codeBlock": [
+        "```\nvar stocks map[string]float64 // stock -> price\nprice := stocks[\"MSFT\"]\nfmt.Println(\"%f\\n\", price)\n```"
+      ],
+      "options": [
+        "0",
+        "0.000000",
+        "The code will panic",
+        "NaN"
+      ],
+      "codeBlockOptions": {},
+      "explanation": "",
+      "correctAnswers": [
+        0
+      ],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q39. What is the common way to have several executables in your project?",
+      "codeBlock": [],
+      "options": [
+        "Have a cmd directory and a directory per executable inside it.",
+        "Comment out main.",
+        "Use build tags.",
+        "Have a pkg directory and a directory per executable inside it."
+      ],
+      "codeBlockOptions": {},
+      "explanation": "3. [medium](https://medium.com/golang-learn/go-project-layout-e5213cdcfaa2)",
+      "correctAnswers": [
+        0
+      ],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    },
+    {
+      "title": "Q40. How can you compile main.go to an executable that will run on OSX arm64 ?",
+      "codeBlock": [],
+      "options": [
+        "Set GOOS to **arm64** and GOARCH to **darwin**.",
+        "Set GOOS to **osx** and GOARCH to **arm64**.",
+        "Set GOOS to **arm64** and GOARCH to **osx**.",
+        "Set GOOS to **darwin** and GOARCH to **arm64**."
+      ],
+      "codeBlockOptions": {},
+      "explanation": "[documentation](https://pkg.go.dev/cmd/go#hdr-Build_constraints)",
+      "correctAnswers": [
+        3
+      ],
+      "isMultipleChoice": false,
+      "isCodeBlockQuestion": false
+    }
+  ]
+}
